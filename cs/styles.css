@@ -1,0 +1,20 @@
+body{
+    background-color: lightcyan;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.logo{
+   max-height:200px;
+   max-width: fit-content;
+}
+
+section{
+    margin: auto;
+    margin-top: 50px;
+}
+
+.row{
+    margin: auto;
+    margin-top: 50px;
+
+}
