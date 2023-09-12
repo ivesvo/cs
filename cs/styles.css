@@ -37,12 +37,15 @@ section{
 } */
 
 .menu{
+    border: 1px;
+    border-style: dashed;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     overflow-wrap: break-word;
     position: fixed;
-    height: calc(100% - 3vw);
+    max-width:300px;
+    /* height: calc(100% - 3vw); */
     background-color: white;
     /* height: 80%; */
     /* overflow-y: scroll; */
