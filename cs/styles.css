@@ -1,15 +1,39 @@
-body{
-    background-color: lightcyan;
-    font-family: 'Times New Roman', Times, serif !important;
+body {
+    background-color: rgb(255, 245, 151);
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    background: white;
+    padding-bottom: 30vh;
 }
 
+body, .accordion-button, .nav-link{
+    /* color:#f47731;
+    --bs-nav-link-hover-color:rgb(101,97,79); */
+
+    color: rgb(101,97,79);
+    --bs-nav-link-hover-color: #f47731;   
+}
+
+a, .accordion-button:not(.collapsed){
+    color: rgb(101,97,79);
+}
+
+
+
 .logo{
-   max-height:200px;
+   max-height: 300px;
    max-width: fit-content;
+}
+@media only screen and (max-width: 600px){
+    .logo{
+    max-height: 150px;
+    max-width: fit-content;        
+    }
+
 }
 
 .sunset{
-    max-height: 50px;
+    max-height: 30px;
 
 }
 
@@ -20,7 +44,8 @@ section{
 
 .row{
     margin: auto;
-    margin-top: 50px;
+    margin-top: 5vh;
+    
 
 }
 .welcome{
@@ -29,25 +54,49 @@ section{
     padding: 10px;
 }
 
-/* .move{
-    flex: 1;
-    height: 80%;
-    overflow-y: scroll;
-    overflow-x: scroll;
-} */
+.accordion {
+    --bs-accordion-active-bg: #f47731;
+    --bs-accordion-btn-focus-box-shadow: rgba(0,0,0,0);
+  }
+
 
 .menu{
-    border: 1px;
+    border: 1px rgb(101,97,79);
     border-style: dashed;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     overflow-wrap: break-word;
-    position: fixed;
-    max-width:300px;
-    /* height: calc(100% - 3vw); */
+    max-width: 320px;
     background-color: white;
-    /* height: 80%; */
-    /* overflow-y: scroll; */
+    border-radius: 15px;
+    padding: 8px 13px 7px;
 }
 
+
+.navbar,
+.navbar-collapse {
+  flex-direction: column;
+  align-items: flex-start;
+ 
+  --bs-navbar-toggler-border-color: rgba(0,0,0,0);
+  justify-content: right;
+}
+
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+      max-width: 320px;
+      position: fixed;
+    
+    }
+}
+
+
+.navbar-toggler{
+    background-color:rgb(101,97,79);
+}

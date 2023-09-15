@@ -8,19 +8,17 @@
     <title>𝒞𝑜𝒹𝑒 𝒮𝓊𝓇𝒻𝒾𝓃𝑔</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- LOGO -->
     <div class="container">
-       
-
-
-        <div class="row">
-           
-
-
+        <div class="row d-flex flex-wrap-reverse">
             <div class="col-md-9">
                 <div class="row">
                     <img src="./scr/codesurfing_logo.png" class="img-fluid mx-auto d-block logo">
@@ -33,17 +31,17 @@
                 </section>
 
                 <!-- WELCOME TEXT -->
-                <section class="bg-light px-5 welcome">
+                <section class="px-4 welcome">
                     <div>
-                        <h2>🏄🏽‍♀️🏄🏽‍♀️🏄🏽‍♀️ Chào mừng bạn đến với CLB Lướt Code. 🏄🏽‍♀️🏄🏽‍♀️🏄🏽‍♀️</h2>
+                        <h2>🏄🏽‍♀️ Chào mừng bạn đến với CLB Lướt Code. 🏄🏽‍♀️</h2>
 
                     </div>
                 </section>
 
                 <!-- WHAT IS THIS COURSE? -->
-                <section>
-                    <div class="bg-light px-5">
-                        >>> What is this course?
+                <section class="px-4 welcome">
+                    <div id="intro">
+                        <h2>>>> What is this course?</h2>
                         <p>Cảm Quan Thực Tế </p>
                         <p>Từ ngàn xưa, người Việt ta đã luôn để tâm tới sự hoà hợp với thiên nhiên trong cái nếp ăn
                             uống, sinh hoạt. Sự hoà hợp này phát triển từ sự gắn bó sâu sắc với thiên nhiên về mặc xúc
@@ -61,50 +59,118 @@
 
                         </p>
                     </div>
-
                 </section>
 
                 <!-- CONTENT -->
-                <section class="bg-light px-5">
-                    <div>CONTENTS
-                        <h4>Unit 1: Connect </h4>
-                        <p>Getting to know and establish the first connection with computer. Students learn to
-                            use computation as a benevolent medium for creative expression and interpersonal
-                            connection.
-                        </p>
+                <section class="welcome">
 
-                        <p> Keyword: conversation // interaction // expression </p>
+                    <div id="contents" class="accordion accordion-flush">
+                        <!-- UNIT 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <h3>Unit 1: Connect</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Getting to know and establish the first connection with
+                                    computer. Students learn to use computation as a benevolent medium for creative
+                                    expression and interpersonal connection..</div>
+                            </div>
+                        </div>
 
-                        <li class="list-group-item">createCanvas</li>
-                        <li class="list-group-item">animation & interactivity</li>
-                        <li class="list-group-item">iteration</li>
 
-                        <p>project 1: First Letter</p>
-                        In this very first assignment, students will design an interactive visual card.
+                        <!-- UNIT 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <h3>Unit 2: Transmit Vision</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Can computer see things as the way human does? This unit
+                                    examines the act of displaying, seeing, watching, and monitoring..</div>
+                            </div>
+                        </div>
 
-                        The card is made with p5.js with at least one interactive and one animated components.
 
-                        The design is according to the content of the letter which students choose freely.
+                        <!-- UNIT 3-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <h3>Unit 3: Transmit Sound </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Using code as performative instrument to amplify the vivid
+                                    world around us. </div>
+                            </div>
+                        </div>
 
-                        Students are welcome to send it to the receiver using the link of their p5 editor.
 
-                        - Technical:
-                        - Shape, text, and other drawing functions.
-                        - Coordination in p5 sketch.
-                        - Flow control and animation.
-                        - How to share your p5 sketch.
-                        - Theme:
-                        - Meaningful interaction between visual and user: Back to the basis of mouse/keyboard and the
-                        screen.
-                        - Technology in a humane vision that connects people and serve as a vehicle for emotional and
-                        artistic expression.
+                        <!-- UNIT 4-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    <h3>Unit 4: Interconnect</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Human practices require the ability of analyzing signals that we can neither see
+                                        nor hear.
+                                    </p>
+                                    <p>
+                                        Fishermen relies on currents, winds, and inherited knowledge to navigate.
+                                        Farmers relies on rain level and temperature to adjust their harvest.
+                                    </p>
+                                    <p>
+                                        This unit will guide students to design a cohesive system from devices and
+                                        bodies of code to sense and make sense of surrounding data that beyond our
+                                        seeing and hearing..
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                        Reference:
 
-                        https://rhizome.org/editorial/2013/apr/9/queer-history-computing-part-three/
-
-                        Mẹ - Keith Trương
                     </div>
+
+
+                </section>
+
+
+                <!-- ACKNOWLEDGEMENT -->
+                <section class="px-4 welcome">
+                    <div id="community">
+                        <h2>>>> Acknowledgement & Community</h2>
+                        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+
+                    </div>
+
                 </section>
 
 
@@ -114,18 +180,31 @@
 
 
             <!-- NAV BAR -->
-
-
             <div class="col-md-3">
-                <nav class="nav menu">
-                    <!-- <section class="move"> -->
+                <!-- <nav class="menu"> -->
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        ༄</h1></span>
+                       
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mg-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#intro">
+                                    <h3>What is this course</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#contents">
+                                    <h3>Contents</h2>
+                                </a>
+                            </li>
+                        </ul>
 
-                        <a class="nav-link" href="#">
-                            <h3>What is this course</h3>
-                        </a>
-                        <a class="nav-link" href="#">
-                            <h3>Contents</h3>
-                        </a>
+
+
                         <ul class="list-group-item px-4">
                             <h5>Unit 1: Connect</h5>
                             <a href="#" class="list-group-item">⤷ createCanvas</a>
@@ -161,49 +240,26 @@
                             <a href="#" class="list-group-item">⤷ project final: Personal Periscope</a>
                         </ul>
 
-                        <a class="nav-link" href="#">
-                            <h3>Acknowledgement & Community </h3>
+                        <a class="nav-link" href="#community">
+                            <h3>Acknowledgement & Community</h3>
                         </a>
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#feedback">
                             <h3>Feedback</h3>
                         </a>
-                        <div><img src="./scr/sunset-ocean.gif" class="img-fluid mx-auto d-block sunset"></div>
-                       
-                   
-                        
+
+                        <div><img src="./scr/sunset-ocean.gif" class="img-fluid mx-auto d-block sunset">
+                        </div>
+
+                    </div>
+
+
+
                     <!-- </section> -->
                 </nav>
-
             </div>
 
         </div>
 
-
-
-        <!-- <nav class="navbar bg-light">
-        <div class="col-md-3 nav">
-            <div class="col">ß
-                <div class="p-4">
-                    <ul class="navbar-nav pl-md-5 ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">What is this course?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#press">Contents</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Acknowledgement & Community</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#investors">Feedback</a>
-                        </li>
-                </div>
-            </div>
-
-        </div>
-
-    </nav> -->
     </div>
 
 
