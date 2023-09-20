@@ -4,6 +4,7 @@ body {
     font-size: 14px;
     background: white;
     padding-bottom: 30vh;
+    color: rgb(101,97,79);
 }
 
 body, .accordion-button, .nav-link{
@@ -11,7 +12,7 @@ body, .accordion-button, .nav-link{
     --bs-nav-link-hover-color:rgb(101,97,79); */
 
     color: rgb(101,97,79);
-    --bs-nav-link-hover-color: #f47731;   
+    --bs-nav-link-hover-color: #fff537;   
 }
 
 a, .accordion-button:not(.collapsed){
@@ -34,7 +35,6 @@ a, .accordion-button:not(.collapsed){
 
 .sunset{
     max-height: 30px;
-
 }
 
 section{
@@ -44,8 +44,7 @@ section{
 
 .row{
     margin: auto;
-    margin-top: 5vh;
-    
+    margin-top: 5vh; 
 
 }
 .welcome{
@@ -55,7 +54,7 @@ section{
 }
 
 .accordion {
-    --bs-accordion-active-bg: #f47731;
+    --bs-accordion-active-bg: #fffdd0; 
     --bs-accordion-btn-focus-box-shadow: rgba(0,0,0,0);
   }
 
@@ -67,36 +66,41 @@ section{
     flex-direction: column;
     flex-wrap: wrap; */
     overflow-wrap: break-word;
-    max-width: 320px;
+    /* max-width: 320px; */
     background-color: white;
     border-radius: 15px;
     padding: 8px 13px 7px;
 }
 
 
-.navbar,
-.navbar-collapse {
+.navbar{
   flex-direction: column;
   align-items: flex-start;
- 
   --bs-navbar-toggler-border-color: rgba(0,0,0,0);
   justify-content: right;
 }
-
-
-.navbar-expand-lg .navbar-nav {
-  flex-direction: column;
-}
-
-@media (min-width: 992px) {
+@media (min-width: 986px)  {
     .navbar {
       max-width: 320px;
       position: fixed;
+      flex-wrap: wrap;
+      overflow: auto;
     
     }
 }
 
 
 .navbar-toggler{
-    background-color:rgb(101,97,79);
+    background-color:rgb(181, 180, 178);
+}
+
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.keyword{
+    font-style: italic;
 }
