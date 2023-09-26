@@ -48,8 +48,7 @@ section{
 
 }
 .welcome{
-    border: 1px;
-    border-style: dashed;
+    border: 1px dashed rgba(101,97,79, .5);
     padding: 10px;
 }
 
@@ -103,4 +102,5 @@ section{
 
 .keyword{
     font-style: italic;
+    /* padding-left: vw; */
 }
