@@ -38,7 +38,10 @@ h5 {
 
     body{
      font-size: clamp(12px, 14px, 13px);
+    }
 
+    h5{
+        font-size: clamp(14px, 16px, 15px)
     }
 
     }
