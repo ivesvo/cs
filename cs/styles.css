@@ -37,7 +37,7 @@ h5 {
     }
 
     h5{
-     font-size: clamp(1em, 2.5vw, 1.8rem);
+     font-size: clamp(1em, 1vw, 1.5m);
 
     }
 
@@ -116,9 +116,9 @@ section{
     /* padding-left: vw; */
 }
 
-.card-body, .modal-content{
+/* .card-body, .modal-content{
     /* background-color: wheat; */
-}
+} */
 
 .modal-backdrop {
     background-color: yellow;
