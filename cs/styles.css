@@ -37,7 +37,7 @@ h5 {
     }
 
     a{
-     font-size: clamp(1em, 1vw, 1.5m);
+     font-size: clamp(12px, 14px, 13px);
 
     }
 
