@@ -91,6 +91,7 @@ section{
   align-items: flex-start;
   --bs-navbar-toggler-border-color: rgba(0,0,0,0);
   justify-content: right;
+  overflow: hidden;
 }
 @media (min-width: 986px)  {
     .navbar {
