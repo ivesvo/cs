@@ -32,10 +32,10 @@ a, .accordion-button:not(.collapsed){
     }
 
     h5{
-     font-size: clamp(2rem, 5vw, 3rem);
+     font-size: clamp(1em, 2.5vw, 1.8rem);
 
     }
-    
+
     }
 
 
