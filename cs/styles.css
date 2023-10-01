@@ -179,7 +179,7 @@ section{
  }
 
  .offcanvas{
-    --bs-offcanvas-padding-y: .5rem;
+    --bs-offcanvas-padding-y: .45rem;
     overflow: hidden;
  }
 
