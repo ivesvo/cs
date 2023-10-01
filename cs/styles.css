@@ -51,6 +51,7 @@ h5 {
 
     }
 }
+
 .sunset{
     max-height: 50px;
 }
@@ -116,9 +117,9 @@ section{
 }
 
 
-.navbar-toggler{
-    /* background-color:rgb(181, 180, 178); */
-}
+/* .navbar-toggler{
+    background-color:rgb(181, 180, 178);
+} */
 
 .offcanvas-body{
     display: flex;
@@ -132,9 +133,9 @@ section{
     /* padding-left: vw; */
 }
 
-.card-body, .modal-content{
-    /* background-color: wheat; */
-}
+/* .card-body, .modal-content{
+    background-color: wheat;
+} */
 
 .modal-backdrop {
     background-color: yellow;
