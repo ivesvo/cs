@@ -34,10 +34,6 @@ h5 {
     font-size: clamp(var(--min), var(--val), var(--max));
   }
 @media only screen and (max-width: 600px){
-    /* .logo{
-    height: 100px;
-    max-width: 100vw;
-    } */
 
     body{
      font-size: clamp(12px, 14px, 13px);
@@ -52,7 +48,7 @@ h5 {
     }
 
     .sunset{
-        max-height: 30px;        
+        max-height: 10px;        
     }
 
     .offcanvas-header{
@@ -62,14 +58,16 @@ h5 {
 
     }
 
-
-
 .sunset{
     max-height: 50px;
 }
 
 .surf{
     max-height: 18px;
+}
+
+.burger{
+    max-height: 30px;
 }
 
 section{
@@ -126,7 +124,7 @@ section{
 
 
 .navbar-toggler{
-    background-color:rgb(181, 180, 178);
+    /* background-color:rgb(181, 180, 178); */
 }
 
 .offcanvas-body{
@@ -150,11 +148,14 @@ section{
    
  }
 
- .btn-primary{
+ .btn-primary, .btn-secondary{
     --bs-btn-color:  rgb(101,97,79);
     --bs-btn-bg: rgba(0,0,0,0);
     --bs-btn-border-color: rgba(0,0,0,0);
     --bs-btn-hover-color: #fff537;
     --bs-btn-hover-bg:  rgba(0,0,0,0);
     --bs-btn-hover-border-color:rgba(0,0,0,0);
+    --bs-btn-active-color: #fff537;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color:#fff;
  }
