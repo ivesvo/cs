@@ -42,7 +42,7 @@ a, .accordion-button:not(.collapsed){
       /* } */
 
     body{
-     font-size: clamp(12px, 14px, 13px);
+     font-size: clamp(12px, 13px, 14px);
     }
 
     /* h3{
