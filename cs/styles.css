@@ -16,6 +16,7 @@ body, .accordion-button, .nav-link, .list-group-item-single, li, h5, p{
 
 a, .accordion-button:not(.collapsed){
     color: rgb(101,97,79);
+    text-decoration: none;
 }
 
 .list-group-item-single:hover{
@@ -28,11 +29,13 @@ a, .accordion-button:not(.collapsed){
    max-width: fit-content;
 }
 
-h5 {
-    /* Font minimum, preferred and maximum value */
-    font-size: clamp(var(--min), var(--val), var(--max));
-  }
+
 @media only screen and (max-width: 600px){
+
+    h5 {
+        /* Font minimum, preferred and maximum value */
+        font-size: clamp(var(--min), var(--val), var(--max));
+      }
 
     body{
      font-size: clamp(12px, 14px, 13px);
@@ -49,7 +52,10 @@ h5 {
     .sunset{
         max-height: calc(16px + 0.3vw) !important;
         margin: 0 !important;
+    }
 
+    a{
+        text-decoration: underline;
     }
 }
 
@@ -119,9 +125,9 @@ section{
 }
 
 
-/* .navbar-toggler{
-    background-color:rgb(181, 180, 178);
-} */
+.navbar-toggler{
+    border: 2px dotted rgba(101,97,79, .5);
+}
 
 .offcanvas-body{
     display: flex;
