@@ -48,12 +48,14 @@ h5 {
 
     .sunset{
         max-height: calc(16px + 0.3vw) !important;
+        margin: 0 !important;
 
     }
 }
 
 .sunset{
     max-height: 50px;
+    margin: auto;
 }
 
 .surf{
