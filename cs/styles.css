@@ -62,7 +62,7 @@ a, .accordion-button:not(.collapsed){
         text-decoration: underline;
     }
 
-    logo{
+    .logo{
         max-height: 200px;
         max-width: 100vw;;
     }
