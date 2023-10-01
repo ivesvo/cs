@@ -47,7 +47,7 @@ h5 {
     }
 
     .sunset{
-        max-height: calc(12px + 0.3vw);
+        max-height: calc(12px + 0.3vw) !important;
 
     }
 }
