@@ -47,6 +47,7 @@ a, .accordion-button:not(.collapsed){
 
     h5, h3{
         font-size: clamp(14px, 15px, 16px);
+        font-weight: bolder;
     }
 
     h2{
@@ -58,7 +59,7 @@ a, .accordion-button:not(.collapsed){
     }
 
     .sunset{
-        max-height: calc(16px + 0.3vw) !important;
+        max-height: calc(16px + 0.2vw) !important;
         margin: 0 !important;
     }
 
@@ -178,7 +179,7 @@ section{
  }
 
  .offcanvas{
-    --bs-offcanvas-padding-y: .4rem;
+    --bs-offcanvas-padding-y: .5rem;
     overflow: hidden;
  }
 
