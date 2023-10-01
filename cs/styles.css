@@ -36,17 +36,25 @@ a, .accordion-button:not(.collapsed){
 
 @media only screen and (max-width: 600px){
 
-    h5 {
+    /* h5 { */
         /* Font minimum, preferred and maximum value */
-        font-size: clamp(var(--min), var(--val), var(--max));
-      }
+        /* font-size: clamp(var(--min), var(--val), var(--max)); */
+      /* } */
 
     body{
      font-size: clamp(12px, 14px, 13px);
     }
 
-    h3{
+    /* h3{
         font-size: clamp(13px, 15px, 14px)
+    } */
+
+    h5, h3{
+        font-size: clamp(16px, 17px, 18px)
+    }
+
+    h2{
+        font-size: calc(22px + 0.3vw);
     }
 
     .surf{
@@ -63,9 +71,11 @@ a, .accordion-button:not(.collapsed){
     }
 
     .logo{
-        max-width: 200px;
+        max-width: 250px;
         max-height: fit-content;
     }
+
+  
 }
 
 .sunset{
