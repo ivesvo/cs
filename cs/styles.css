@@ -45,12 +45,8 @@ a, .accordion-button:not(.collapsed){
      font-size: clamp(12px, 13px, 14px);
     }
 
-    /* h3{
-        font-size: clamp(13px, 15px, 14px)
-    } */
-
     h5, h3{
-        font-size: clamp(15px, 16px, 17px)
+        font-size: clamp(14px, 15px, 16px);
     }
 
     h2{
@@ -182,7 +178,7 @@ section{
  }
 
  .offcanvas{
-    --bs-offcanvas-padding-y: .5rem;
+    --bs-offcanvas-padding-y: .4rem;
     overflow: hidden;
  }
 
