@@ -47,11 +47,10 @@ h5 {
     }
 
     .sunset{
-        max-height: 12px !important;        
-    }
+        max-height: calc(12px + 0.3vw);
 
     }
-
+}
 .sunset{
     max-height: 50px;
 }
@@ -156,5 +155,4 @@ section{
 
  .offcanvas{
     --bs-offcanvas-padding-y: .5rem;
-
  }
