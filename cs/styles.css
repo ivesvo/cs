@@ -50,8 +50,13 @@ h5 {
     }
 
 
+
 .sunset{
-    max-height: 30px;
+    max-height: 50px;
+}
+
+.surf{
+    max-height: 25px;
 }
 
 section{
