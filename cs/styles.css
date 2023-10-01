@@ -42,8 +42,8 @@ h5 {
      font-size: clamp(12px, 14px, 13px);
     }
 
-    h5{
-        font-size: clamp(14px, 16px, 15px)
+    h3{
+        font-size: clamp(15px, 17px, 16px)
     }
 
     .surf{
