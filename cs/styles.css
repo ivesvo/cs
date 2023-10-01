@@ -3,11 +3,10 @@ body{
     font-family: 'Epilogue', sans-serif;
     font-size: 14px;
     background: white;
-    padding-bottom: 30vh;
+    padding-bottom: 7vh;
     color: rgb(101,97,79);
     
 }
-
 
 
 body, .accordion-button, .nav-link, .list-group-item-single, li, h5, p{
