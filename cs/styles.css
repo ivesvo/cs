@@ -50,7 +50,7 @@ a, .accordion-button:not(.collapsed){
     } */
 
     h5, h3{
-        font-size: clamp(16px, 17px, 18px)
+        font-size: clamp(15px, 16px, 17px)
     }
 
     h2{
