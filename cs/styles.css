@@ -49,6 +49,7 @@ h5 {
     .sunset{
         max-height: 10px;        
     }
+
     }
 
 .sunset{
@@ -151,4 +152,9 @@ section{
     --bs-btn-active-color: #fff537;
     --bs-btn-active-bg: #fff;
     --bs-btn-active-border-color:#fff;
+ }
+
+ .offcanvas{
+    --bs-offcanvas-padding-y: .5rem;
+
  }
