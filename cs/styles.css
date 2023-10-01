@@ -42,10 +42,10 @@ h5 {
     body{
      font-size: clamp(12px, 14px, 13px);
     }
-
-    /* h3{
+    
+    h3{
         font-size: clamp(14px, 16px, 15px)
-    } */
+    }
 
     }
 
@@ -56,7 +56,7 @@ h5 {
 }
 
 .surf{
-    max-height: 25px;
+    max-height: 18px;
 }
 
 section{
