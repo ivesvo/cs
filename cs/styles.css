@@ -64,7 +64,7 @@ a, .accordion-button:not(.collapsed){
 
     .logo{
         max-height: 200px;
-        max-width: fit-content;
+        /* max-width: fit-content; */
     }
 }
 
