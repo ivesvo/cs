@@ -5,11 +5,12 @@ body{
     background: white;
     padding-bottom: 7vh;
     color: rgb(101,97,79);
+   
     
 }
 
 
-body, .accordion-button, .nav-link, .list-group-item-single, li, h5, p{
+body,  .accordion-button, .nav-link, .list-group-item-single, li, h5, p{
     color: rgb(101,97,79);
     --bs-nav-link-hover-color: #fff537;   
 }
@@ -19,7 +20,7 @@ a, .accordion-button:not(.collapsed){
     text-decoration: none;
 }
 
-.list-group-item-single:hover{
+a:hover, .list-group-item-single:hover{
     color: #fff537;
 
 }
