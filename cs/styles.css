@@ -46,7 +46,7 @@ a, .accordion-button:not(.collapsed){
     }
 
     h5, h3{
-        font-size: clamp(14px, 15px, 16px);
+        font-size: calc(15px + 0.3vw);
         /* font-weight: bold; */
     }
 
