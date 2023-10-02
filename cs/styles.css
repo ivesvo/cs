@@ -141,9 +141,9 @@ section{
 }
 
 
-.navbar-toggler{
+/* .navbar-toggler{
     border: 2px dotted rgba(101,97,79, .5);
-}
+} */
 
 .offcanvas-body{
     display: flex;
