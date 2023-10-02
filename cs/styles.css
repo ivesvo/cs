@@ -59,7 +59,7 @@ a, .accordion-button:not(.collapsed){
     }
 
     .sunset{
-        max-height: calc(15px + 0.2vw) !important;
+        max-height: calc(10px + 0.2vw) !important;
         margin: 0 !important;
     }
 
