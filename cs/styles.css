@@ -7,10 +7,13 @@ body{
     color: rgb(101,97,79);
 }
 
+::selection {
+    background: #fff450;
+}
 
 body,  .accordion-button, .nav-link, .list-group-item-single, li, h5, p{
     color: rgb(101,97,79);
-    --bs-nav-link-hover-color: #fff537;   
+    --bs-nav-link-hover-color: #c5c4b7;   
 }
 
 a, .accordion-button:not(.collapsed){
@@ -18,8 +21,12 @@ a, .accordion-button:not(.collapsed){
     text-decoration: none;
 }
 
+.contributers{
+    text-decoration: underline;
+}
+
 a:hover, .list-group-item-single:hover{
-    color: #fff537;
+    color: #c5c4b7;
 
 }
 
@@ -69,7 +76,7 @@ a:hover, .list-group-item-single:hover{
       /* } */
 
     body{
-     font-size: clamp(12px, 13px, 14px);
+     font-size: clamp(11px, 12px, 13px);
     }
 
     h5, h3{
@@ -98,6 +105,11 @@ a:hover, .list-group-item-single:hover{
         max-width: 250px;
         max-height: fit-content;
     }
+
+    :roots{
+        --font-size: calc(8px + 0.3vw);
+    }
+   
 
   
 }
@@ -131,7 +143,7 @@ section{
 }
 
 .accordion {
-    --bs-accordion-active-bg: rgba(255,255,0,.8); 
+    --bs-accordion-active-bg: rgba(214, 214, 213, 0.8); 
     --bs-accordion-btn-focus-box-shadow: rgba(0,0,0,0);
   }
 
@@ -189,7 +201,7 @@ section{
 } */
 
 .modal-backdrop {
-    background-color: yellow;
+    background-color: rgb(255, 204, 0);
    
  }
 
@@ -213,3 +225,9 @@ section{
  .btn-link {
     cursor: pointer
   }
+
+
+/* :root {
+    --font-size: calc(12px + 0.3vw);
+} */
+    
