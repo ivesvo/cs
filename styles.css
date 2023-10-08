@@ -11,13 +11,26 @@ body{
 /* using this depends on the screensize */
 :root{
     --font-size: calc(9px + 0.35vw);
-    --h2-size: calc(1.3rem + 0.6vw);
-    /* --h3-size: calc(1.3rem + .6vw); */
-
+    --h2-size: calc(1.6rem + 0.2vw);
+    --h3-size: calc(1.2rem + 0.3vw);
+    --h4-size: calc(1rem + 0.3vw);
+    --h5-size: calc(0.9rem + 0.3vw);
 }
 
 h2{
     font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+h4{
+    font-size: var(--h4-size);
+}
+
+h5{
+    font-size: var(--h5-size);
 }
 
 /* hightlight of text */
@@ -85,8 +98,13 @@ a:hover, .list-group-item-single:hover{
 
 @media only screen and (max-width: 600px){
     :root{
-        --font-size: 3vw;
-    }
+        --font-size: 3.3vw;
+        --h2-size: calc(1.2rem + 0.3vw);
+        --h3-size: calc(1rem + 0.3vw);
+        --h4-size: calc(.9rem + 0.3vw);
+        --h5-size: calc(0.7rem + 0.3vw);
+        }
+    
 
     /* h5 { */
         /* Font minimum, preferred and maximum value */
@@ -108,9 +126,9 @@ a:hover, .list-group-item-single:hover{
         /* font-weight: bold; */
     /* } */
 
-    h2{
+    /* h2{
         font-size: calc(22px + 0.3vw);
-    }
+    } */
 
     .surf{
         max-height: 10px;
@@ -128,6 +146,7 @@ a:hover, .list-group-item-single:hover{
     .logo{
         max-width: 250px;
         max-height: fit-content;
+
     }
 
 }
