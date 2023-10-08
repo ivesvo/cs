@@ -11,7 +11,7 @@ body{
 /* using this depends on the screensize */
 :root{
     --font-size: calc(9px + 0.35vw);
-    --h2-size: calc(1.6rem + 0.2vw);
+    --h2-size: calc(1.5rem + 0.2vw);
     --h3-size: calc(1.2rem + 0.3vw);
     --h4-size: calc(1rem + 0.3vw);
     --h5-size: calc(0.9rem + 0.3vw);
@@ -102,7 +102,7 @@ a:hover, .list-group-item-single:hover{
         --h2-size: calc(1.2rem + 0.3vw);
         --h3-size: calc(1rem + 0.3vw);
         --h4-size: calc(.9rem + 0.3vw);
-        --h5-size: calc(0.7rem + 0.3vw);
+        --h5-size: 3.3vw;
         }
     
 
