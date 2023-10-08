@@ -89,8 +89,9 @@ a:hover, .list-group-item-single:hover{
     /* } */
 
     :root{
-        --font-size: calc(6px+ 0.5vw);
+        --font-size: calc(3px+ 0.1vw);
     }
+
     h5, h3{
         font-size: calc(15px + 0.3vw);
         /* font-weight: bold; */
