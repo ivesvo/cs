@@ -77,6 +77,9 @@ a:hover, .list-group-item-single:hover{
 }
 
 @media only screen and (max-width: 600px){
+    :root{
+        --font-size: calc(8px+0.3vw);
+    }
 
     /* h5 { */
         /* Font minimum, preferred and maximum value */
@@ -92,14 +95,11 @@ a:hover, .list-group-item-single:hover{
         --font-size: calc(3px+ 0.1vw) !important;
     }
     
-    body{
-        font-size: var(--font-size);
-    } */
 
     h5, h3{
         font-size: calc(15px + 0.3vw);
         /* font-weight: bold; */
-    }
+    /* } */
 
     h2{
         font-size: calc(22px + 0.3vw);
@@ -123,12 +123,6 @@ a:hover, .list-group-item-single:hover{
         max-height: fit-content;
     }
 
-    :roots{
-        --font-size: calc(8px + 0.3vw);
-    }
-   
-
-  
 }
 
 .sunset{
