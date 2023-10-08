@@ -121,7 +121,7 @@ a:hover,
 
     .sunset {
         max-height: calc(10px + 0.2vw) !important;
-        
+        margin: 0 !important;
     }
 
     a {
@@ -220,9 +220,6 @@ section {
     /* padding-left: vw; */
 }
 
-/* .card-body, .modal-content{
-    background-color: wheat;
-} */
 
 .modal-backdrop {
     background: radial-gradient(circle, rgba(72, 212, 255, 1) 0%, rgba(255, 244, 80, 1) 74%, rgba(197, 196, 183, 1) 100%);
@@ -241,7 +238,7 @@ section {
     --bs-btn-hover-bg: rgba(0, 0, 0, 0);
     --bs-btn-hover-border-color: rgba(0, 0, 0, 0);
     --bs-btn-active-color: #c5c4b7;
-    --bs-btn-active-bg: #fff;
+    --bs-btn-active-bg: £fff;
     --bs-btn-active-border-color: #fff;
 }
 
@@ -260,5 +257,9 @@ ul {
 
 .mahjong {
     font-size: 20px;
+}
+
+.fs{
+    cursor: pointer;
 }
 
