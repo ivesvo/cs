@@ -13,7 +13,7 @@ body {
     --font-size: calc(10px + 0.28vw);
     --h2-size: calc(1.5rem + 0.1vw);
     --h3-size: calc(1.3rem + 0.12vw);
-    --h4-size: calc(1.1rem + 0.3vw);
+    --h4-size: calc(1.1rem + 0.2vw);
     --h5-size: calc(0.8rem + 0.3vw);
 }
 
