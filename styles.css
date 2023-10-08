@@ -10,7 +10,7 @@ body{
 
 /* using this depends on the screensize */
 :root{
-    --font-size: calc(8px + 0.35vw);
+    --font-size: calc(9px + 0.35vw);
     --h2-size: calc(1.3rem + 0.6vw);
     /* --h3-size: calc(1.3rem + .6vw); */
 
@@ -85,7 +85,7 @@ a:hover, .list-group-item-single:hover{
 
 @media only screen and (max-width: 600px){
     :root{
-        --font-size: 2.8vw;
+        --font-size: 3vw;
     }
 
     /* h5 { */
