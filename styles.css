@@ -10,7 +10,7 @@ body{
 
 /* using this depends on the screensize */
 :root{
-    --font-size: calc(8px + 0.4vw);
+    --font-size: calc(8px + 0.35vw);
 }
 
 /* hightlight of text */
