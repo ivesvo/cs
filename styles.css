@@ -5,11 +5,14 @@ body{
     background: white;
     padding-bottom: 7vh;
     color: rgb(101,97,79);
+    line-height:1.6em;
 }
 
+/* hightlight of text */
 ::selection {
-    background: #fff450;
+    background:rgba(255,244,80,.7);
 }
+
 
 body,  .accordion-button, .nav-link, .list-group-item-single, li, h5, p{
     color: rgb(101,97,79);
@@ -41,7 +44,7 @@ a:hover, .list-group-item-single:hover{
 
 .session-title  {
     border-bottom: 2px dotted rgba(101,97,79, .5);
-    padding: 10px 10px 10px 0px;
+    /* padding: 5px 5px 5px 0px; */
 }
 
 /* Hide code embed on mobile and show gif instead*/
@@ -143,7 +146,7 @@ section{
 }
 
 .accordion {
-    --bs-accordion-active-bg: rgba(214, 214, 213, 0.8); 
+    --bs-accordion-active-bg: rgba(214, 214, 213, 0.5); 
     --bs-accordion-btn-focus-box-shadow: rgba(0,0,0,0);
   }
 
@@ -201,18 +204,21 @@ section{
 } */
 
 .modal-backdrop {
-    background-color: rgb(255, 204, 0);
-   
- }
+    background: radial-gradient(circle, rgba(72,212,255,1) 0%, rgba(255,244,80,1) 74%, rgba(197,196,183,1) 100%);
+}
+
+ .modal-backdrop.show {
+    opacity: .9 !important;
+}
 
  .btn-primary, .btn-secondary{
     --bs-btn-color:  rgb(101,97,79);
     --bs-btn-bg: rgba(0,0,0,0);
     --bs-btn-border-color: rgba(0,0,0,0);
-    --bs-btn-hover-color: #fff537;
+    --bs-btn-hover-color:  #c5c4b7;  
     --bs-btn-hover-bg:  rgba(0,0,0,0);
     --bs-btn-hover-border-color:rgba(0,0,0,0);
-    --bs-btn-active-color: #fff537;
+    --bs-btn-active-color:  #c5c4b7;  
     --bs-btn-active-bg: #fff;
     --bs-btn-active-border-color:#fff;
  }
@@ -226,8 +232,18 @@ section{
     cursor: pointer
   }
 
+ul{
+    list-style-type: "࿔  "
+}
+
+.mahjong{
+    font-size: 20px;
+}
+
+
 
 /* :root {
     --font-size: calc(12px + 0.3vw);
 } */
-    
+
+
