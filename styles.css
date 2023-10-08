@@ -14,7 +14,7 @@ body {
     --h2-size: calc(1.6rem + 0.12vw);
     --h3-size: calc(1.3rem + 0.12vw);
     --h4-size: calc(1.1rem + 0.3vw);
-    --h5-size: calc(0.85rem + 0.3vw);
+    --h5-size: calc(0.8rem + 0.3vw);
 }
 
 h2 {
@@ -109,10 +109,10 @@ a:hover,
 @media only screen and (max-width: 600px) {
     :root {
         --font-size: 3.3vw;
-        --h2-size: calc(1.2rem + 0.3vw);
-        --h3-size: calc(1rem + 0.3vw);
-        --h4-size: calc(.9rem + 0.3vw);
-        --h5-size: 3.3vw;
+        --h2-size: calc(1.2rem + 0.2vw);
+        --h3-size: calc(1rem + 0.2vw);
+        --h4-size: calc(.9rem + 0.2vw);
+        --h5-size: 3.8vw;
     }
 
     .surf {
