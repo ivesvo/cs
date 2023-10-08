@@ -8,9 +8,9 @@ body{
     line-height:1.6em;
 }
 
-/* using this depends on the screensiz */
+/* using this depends on the screensize */
 :root{
-    --font-size: calc(7px + 0.5vw);
+    --font-size: calc(8px + 0.4vw);
 }
 
 /* hightlight of text */
@@ -88,9 +88,13 @@ a:hover, .list-group-item-single:hover{
      /* font-size: calc(10px+0.3vw); */
     /* } */
 
-    :root{
+    /* :root{
         --font-size: calc(3px+ 0.1vw) !important;
     }
+    
+    body{
+        font-size: var(--font-size);
+    } */
 
     h5, h3{
         font-size: calc(15px + 0.3vw);
