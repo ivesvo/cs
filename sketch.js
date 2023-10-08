@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
 let images = document.querySelectorAll('.fs');
 
 for (let i = 0; i < images.length; i++) {
-    images[i].onmousedown = function() {
+    images[i].ontouchstart = function() {
         if(images[i].fullscreenElement){ 
            images[i].exitFullscreen(); 
          } else { 
