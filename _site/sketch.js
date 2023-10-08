@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 
-   // Scroll to anchor and open accordion panel
+   // Scroll to anchor and open accordion panel/ot working yet
    document.querySelectorAll
    ('a[data-bs-toggle="collapse"]').forEach(function (link) {
        link.addEventListener('click', function (event) {
@@ -26,3 +26,16 @@ document.addEventListener("DOMContentLoaded", function(){
            $(accordion).collapse('show');
        });
    });
+
+// click fullscreen
+let images = document.querySelectorAll('.fs');
+
+for (let i = 0; i < images.length; i++) {
+    images[i].ontouchstart = function() {
+        if(images[i].fullscreenElement){ 
+           images[i].exitFullscreen(); 
+         } else { 
+           images[i].requestFullscreen();
+         } 
+    }
+}
