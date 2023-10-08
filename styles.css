@@ -5,14 +5,14 @@ body{
     background: white;
     padding-bottom: 7vh;
     color: rgb(101,97,79);
-    line-height:1.6em;
+    line-height: 1.6em;
 }
 
 /* using this depends on the screensize */
 :root{
     --font-size: calc(9px + 0.35vw);
-    --h2-size: calc(1.5rem + 0.2vw);
-    --h3-size: calc(1.2rem + 0.3vw);
+    --h2-size: calc(1.4rem + 0.2vw);
+    --h3-size: calc(1.2rem + 0.2vw);
     --h4-size: calc(1rem + 0.3vw);
     --h5-size: calc(0.9rem + 0.3vw);
 }
