@@ -229,6 +229,10 @@ section {
     opacity: .9 !important;
 }
 
+.modal-header, .modal-body{
+    color: rgb(101, 97, 79) !important;
+}
+
 .btn-primary,
 .btn-secondary {
     --bs-btn-color: rgb(101, 97, 79);
