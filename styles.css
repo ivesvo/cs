@@ -1,11 +1,16 @@
 body{
     background-color: rgb(255, 245, 151);
     font-family: 'Epilogue', sans-serif;
-    font-size: 14px;
+    font-size: var(--font-size);
     background: white;
     padding-bottom: 7vh;
     color: rgb(101,97,79);
     line-height:1.6em;
+}
+
+/* using this depends on the screensiz */
+:root{
+    --font-size: calc(7px + 0.5vw);
 }
 
 /* hightlight of text */
@@ -78,10 +83,14 @@ a:hover, .list-group-item-single:hover{
         /* font-size: clamp(var(--min), var(--val), var(--max)); */
       /* } */
 
-    body{
-     font-size: clamp(11px, 12px, 13px);
-    }
+    /* body{ */
+     /* font-size: clamp(11px, 12px, 13px); */
+     /* font-size: calc(10px+0.3vw); */
+    /* } */
 
+    :root{
+        --font-size: calc(7px+ 0.3vw);
+    }
     h5, h3{
         font-size: calc(15px + 0.3vw);
         /* font-weight: bold; */
