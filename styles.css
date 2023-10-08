@@ -108,11 +108,11 @@ a:hover,
 
 @media only screen and (max-width: 600px) {
     :root {
-        --font-size: 3.3vw;
-        --h2-size: calc(1.2rem+0.05vw);
+        --font-size: 3.2vw;
+        --h2-size: calc(1.2rem + 0.1vw);
         --h3-size: calc(1rem + 0.2vw);
-        --h4-size: calc(.9rem + 0.2vw);
-        --h5-size: 3.8vw;
+        --h4-size: calc(.9rem + 0.1vw);
+        --h5-size: 3.5vw;
     }
 
     .surf {
