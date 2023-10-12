@@ -12,11 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <!-- <script src="./sketch.js"></script> -->
 </head>
 
 <body>
     <!-- LOGO -->
+    <!-- <script src="./sketch.js"></script> -->
     <div class="container">
         <div class="row d-flex flex-wrap-reverse">
 
@@ -62,21 +66,50 @@
                         unique assets in the common language of programming.
 
                         <br><br>As a community project, CodeSurfing has received precious support from <a
-                            href="https://processing.org/">Processing
+                            class="contributers" href="https://processing.org/">Processing
                             Foundation</a>, from our beloved friends (<a class="contributers"
-                            href="https://www.wedogood.party/">wedogood</a>, <a class="contributers">Ivy Vo</a>, <a class ="contributers">Uyen Dong</a>), and from our community
+                            href="https://www.wedogood.party/">wedogood</a>, <a class="contributers">Ivy Vo</a>, <a
+                            class="contributers">Uyen Dong</a>), and from our community
                         here
                         in Ho Chi Minh City. Follow us on
-                        Instagram <a href="https://www.instagram.com/codesurfing.vn/?hl=en" target="blank"
-                            text-decoration="underline">@codesurfing.vn</a> for more updates.</p>
+                        Instagram <a href="https://www.instagram.com/codesurfing.vn/?hl=en" class="contributers"
+                            target="blank" text-decoration="underline">@codesurfing.vn</a> for more updates.</p>
+
+                        <!-- CAROUSEL -->
+                        <div class="container">
+                            <div class="slider-wrapper">
+                                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                                    west
+                                </button>
+                                <ul class="image-list">
+                                    <img class="image-item" src="scr/about-1.jpg" alt="img-1" />
+                                    <img class="image-item" src="scr/about-2.jpg" alt="img-2" />
+                                    <img class="image-item" src="scr/about-3.jpg" alt="img-3" />
+                                    <img class="image-item" src="scr/about-4.jpg" alt="img-4" />
+                                </ul>
+                                <button id="next-slide" class="slide-button material-symbols-rounded">
+                                    east
+                                </button>
+                            </div>
+                            <div class="slider-scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <section class="px-4 welcome">
                     <div>
                         <h2>Catch us if you can 🏄🏻‍♂️</h2>
+<<<<<<< HEAD
                         <a href="#" target="blank" text-decoration="underline">⤷ 2023 October 19th, 3PM-4PM ⎯
                             “CodeSurfing: Backyard Speed Date” @ Reading Cabin</a>
+=======
+                        <a href="#" target="blank" text-decoration="underline">⤷ 2023 October 15th, 3PM-5PM ⎯
+                            “Hen Luot 001” @ Reading Cabin</a>
+>>>>>>> d3ccc0a (update content + minor styling)
                     </div>
                 </section>
 
@@ -84,10 +117,14 @@
                 <section class="px-4 welcome">
                     <div id="intro">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <h2>Our 1st Course ⎯ Sensory Narratives 👂🏼</h2>
 =======
                         <h2>Our 1st Course ⎯ Sensory Narratives</h2>
 >>>>>>> 031e16a (saturday)
+=======
+                        <h2>Our 1st Course ⎯ Sensory Narratives 🀥</h2>
+>>>>>>> df9b5c3 (changing md)
                         <p>Sensory Narratives is the first course developed by CodeSurfing. The course guides students
                             to use creative coding as a way to connect us human and our nature.</p>
 
@@ -106,21 +143,24 @@
                             libraries, APIs, and devices to further manifest our artworks in new formats.</p>
                         </p>
 
-                        <img src="scr/course-1-thumb.png" width=40%
-                            alt="A man sitting at his desk and working in a forest."
-                            onclick="this.requestFullscreen()">
-                        <p class="img-caption">[seoulthesoloist]</p>
+                        <img src="scr/course-1-thumb.png" width=100%
+                            alt="A man sitting at his desk and working in a forest." class="fs">
+                        <!-- onclick="this.requestFullscreen()"> -->
+                        <p class="description">[seoulthesoloist]</p>
 
                         <p>The course is built upon 4 units (12 sessions) in ascending levels:</p>
                         <ul>
                             <li><a href="#connect">UNIT 1: CONNECT</a>
                                 ⎯ to establish our first interaction with computer while gaining familiarity
                                 with the language of p5.js.</li>
-                            <li><a href="#transmit-vision">UNIT 2: TRANSMIT VISION</a> ⎯ to understand the world through images while practicing using
+                            <li><a href="#transmit-vision">UNIT 2: TRANSMIT VISION</a> ⎯ to understand the world through
+                                images while practicing using
                                 arrays and functions.</li>
-                            <li><a href="#transmit-sound">UNIT 3: TRANSMIT SOUND </a>⎯ to create with sound while practicing
+                            <li><a href="#transmit-sound">UNIT 3: TRANSMIT SOUND </a>⎯ to create with sound while
+                                practicing
                                 object-oriented programming and advanced animation.</li>
-                            <li><a href="#transmit-data">UNIT 4: TRANSMIT DATA</a> ⎯ to sense the world that beyond seeing and hearing while learning
+                            <li><a href="#transmit-data">UNIT 4: TRANSMIT DATA</a> ⎯ to sense the world that beyond
+                                seeing and hearing while learning
                                 about data-driven application.</li>
                         </ul>
                         </p>
@@ -136,25 +176,21 @@
                             access. We welcome teachers and learners to use, reference, and contribute to this
                             community resource.
                         </p>
-                        <h4>What we provide</h4>
-                        <p>⤷ COURSE OUTLINE ⎯ A designed and tested curriculum to teach creative coding using p5.js.</p>
-                        <p>⤷ SAMPLE LECTURE ⎯ Each session comes with a sample lecture as a script to guide teachers and
-                            students to teach and learn. Look for this symbol ▀̿  for Sample Lecture in each session.
+                        <h3>What We Provide</h3>
+                        <p>⤷ COURSE OUTLINE ⎯ A curriculum to teach creative coding using p5.js.</p>
+                        <p>⤷ SAMPLE LECTURE ⎯ Each session comes with a sample lecture as a script to run the class.
                             Activities in a sample lecture include:</p>
                         <ul>
-                            <li>OBJECTIVES: Before you start. Checklist of what need to be done / group of skills need
-                                to be acquired within the session.</li>
+                            <li>OBJECTIVES: Checklist of what need to be done and group of skills need to be acquired
+                                within the session.</li>
                             <li>WARM-UP: Questions or showcase to get learners engage with today's topic. Oftentimes,
                                 followed by a discussion.</li>
-                            <li>TEACH: Sharing and demonstration from teachers, includes recommend teaching flow or
+                            <li>TEACH: Sharing and demonstration from teachers, includes recommend teaching flow and
                                 ready-to-use code demo.</li>
-                            <li>ACTIVITY: Quick practice, discussion, or group activity to help students get a quick
+                            <li>ACTIVITY: Quick practice, discussion, and other activities to help students get a quick
                                 grasp of what they have learnt. Oftentimes, followed by a refection to summary
                                 and contemplate. This is important, highly recommend not to skip it.</li>
-                            <li>COOL-DOWN: Time for answering class questions or quick recommend of further reading or
-                                resources.</li>
-                            <li>ASSIGNMENTS</li>
-                            <li>FURTHER READINGS</li>
+                            <li>ASSIGNMENTS, FURTHER READINGS</li>
                         </ul>
 
                         <p><i>We currently provide sample lectures for Unit 1. Others units are to be updated!</i>
@@ -174,14 +210,14 @@
                         </ul>
                         </p>
 
-                        <h4>For teachers</h4>
+                        <h3>For Teachers</h3>
                         <p>
                             Each sample lecture is designed for a approximately 90-minute session. The sample
                             lectures are suggestive. Please use them as references and not hesitate to
                             inteprete them into your own style!
                         </p>
 
-                        <h4>For students</h4>
+                        <h3>For Students</h3>
                         <p>
                             Use this to have a better view of the course: what to expect and what to prepare.
                             If you are learning by yourself, do not afraid to go off the topics and surf into new
@@ -234,7 +270,7 @@
 
                                     <img class="p5-demo-gif" width="500" src="scr/p1-sample-thumb.gif">
                                     <div>
-                                        <p>Sample project: <i>"portrait"</i> ⎯ A letter to my younger self.
+                                        <p class="description">Sample project: <i>"portrait"</i> ⎯ A letter to my younger self.
                                             Fabricated summer 2017 in the dialogue of Skinny Dipping (Ocean Vuong).
                                             College
                                             ended but that summer still burns slowly. As I attempt to touch the
@@ -244,16 +280,17 @@
                                     <!--------------------- SESSION 1 ----------------------->
                                     <div class="d-flex justify-content-between align-items-center session-title">
                                         <h5 id="s1">⤷ SESSION 1. First Interaction </h5>
-                                        <h2><a data-bs-toggle="collapse" href="#collapseExample" role="button"
-                                            aria-expanded="false" aria-controls="collapseExample">
-                                            <button type="button" class="btn btn-primary mahjong" data-bs-toggle="modal" 
-                                                data-bs-target="#sample-lecture-1">
-                                                ▀̿
-                                            </button>
-                                        </a></h2>
-    
+                                        <p><a data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <button type="button"
+                                                    class="btn btn-primary mahjong material-symbols-rounded"
+                                                    data-bs-toggle="modal" data-bs-target="#sample-lecture-1">
+                                                    arrow_outward
+                                                </button>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <br>
+
                                     <ul style="margin-bottom:10px">
                                         <li> What is p5.js? Demystifying: code, language, libraries.</li>
                                         <li> Make your first p5.js sketch.</li>
@@ -264,7 +301,7 @@
                                     </ul>
 
                                     <!-- SAMPLE LECTURE 1 -->
-                                   
+
                                     <div class="modal fade" id="sample-lecture-1" data-bs-backdrop="static"
                                         data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                         aria-hidden="true">
@@ -272,7 +309,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Lecture 1:
-                                                        CREATE CANVAS</h1>
+                                                        FIRST INTERACTION</h1>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
@@ -297,27 +334,26 @@
                                         <h5>
                                             <a data-bs-toggle="collapse" href="#collapseExample" role="button"
                                                 aria-expanded="false" aria-controls="collapseExample">
-                                                <button type="button" class="btn btn-primary mahjong" data-bs-toggle="modal"
-                                                    data-bs-target="#sample-lecture-2">
-                                                    ▀̿
+                                                <button type="button"
+                                                    class="btn btn-primary mahjong material-symbols-rounded"
+                                                    data-bs-toggle="modal" data-bs-target="#sample-lecture-2">
+                                                    arrow_outward
                                                 </button>
                                             </a>
-
                                         </h5>
-                                            
                                     </div>
-                                    <br>
-                                    <ul style="margin-bottom:10px">
-                                        <li> map() & lerpColor()</li>
-                                        <li> if condition to control interaction and animation using </li>
-                                        <li> Interaction with mouse using mousePressed()</li>
-                                        <li> Interaction with keyboard using keyPressed() </li>
-                                        <li> Random</li>
-                                        <li> Tidy Code and Documentation</li>
-                                    </ul>
-
+                                    <div class="session-outline">
+                                        <ul>
+                                            <li> map() & lerpColor()</li>
+                                            <li> if condition to control interaction and animation using </li>
+                                            <li> Interaction with mouse using mousePressed()</li>
+                                            <li> Interaction with keyboard using keyPressed() </li>
+                                            <li> Random</li>
+                                            <li> Tidy Code and Documentation</li>
+                                        </ul>
+                                    </div>
                                     <!-- SAMPLE LECTURE 2 -->
-                                   
+
                                     <div class="modal fade" id="sample-lecture-2" data-bs-backdrop="static"
                                         data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                         aria-hidden="true">
@@ -347,15 +383,17 @@
                                     <!--------------------- SESSION 3 ----------------------->
                                     <div class="d-flex justify-content-between align-items-center session-title">
                                         <h5>⤷ SESSION 3. Transformation & Iteration </h5>
-                                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                                            aria-controls="collapseExample">
-                                            <button type="button" class="btn btn-primary mahjong" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                ▀̿
+                                        <a data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample">
+                                            <button type="button"
+                                                class="btn btn-primary mahjong material-symbols-rounded"
+                                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                arrow_outward
                                             </button>
                                         </a>
-                                    
+
                                     </div>
-                                    <br>
+
                                     <ul style="margin-bottom: 10px">
                                         <li> Write your own function</li>
                                         <li> Transformation: translate(), scale(), rotate()</li>
@@ -365,7 +403,7 @@
                                     </ul>
 
                                     <!-- SAMPLE LECTURE 3 -->
-                                   
+
 
                                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
                                         data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel"
@@ -428,9 +466,12 @@
                                         to highlight those essences either through manipulating the images' structure or
                                         semantics.
                                     </p>
-                                    <p>Sample Project: All The Strangers I Met On <i>Bờ Kênh Nhiêu Lộc</i></p>
-                                    <img width=100% src="scr/project2-thumb.jpeg">
-                                    <p>“All the strangers I met on Bờ Kênh Nhiêu Lộc” is a reflection of myself living
+
+                                    <img width=100% src="scr/p2-sample-thumb.png" class="fs">
+                                    <!-- onClick="makeFullScreen(event)"> -->
+
+                                    <p class="description">Sample Project: <i>“All the strangers I met on Bờ Kênh Nhiêu Lộc”</i>, is a
+                                        reflection of myself living
                                         in the overwhelming Saigon, where I ride 12km every day to work. It is a still
                                         film with a huge cast trying to get through the screen yet no one is the main
                                         character. To make this, I performed object detection on a dashcam driving
@@ -496,14 +537,28 @@
                                         the use of algorithm and vectors on enriching our animation.
                                     </p>
                                     <h5 class="session-title">PROJECT 3: Soundscape</h5>
+<<<<<<< HEAD
                                     <embed src="https://symphonious-kleicha-cbc328.netlify.app/"
                                         style="width:100%; height: 600px;">
                                     <p> Sample Project: <i>“I let the fish back into the ocean.”</i> ⎯
+=======
+                                    <p>
+                                        In this project, students go out to their neighborhood and record a soundscape. 
+                                        Then using programming to amplify the subject of the soundscape in visual. 
+                                    </p>
+                                    <embed src="https://symphonious-kleicha-cbc328.netlify.app/"
+                                        style="width:100%; height: 600px;">
+                                    <p class="description"> Sample Project: <i>“I let the fish back into the ocean.”</i> ⎯
+>>>>>>> d3ccc0a (update content + minor styling)
                                         Made from footages I recorded throughout 2023, “I let the fish back to into the
                                         ocean” is a meditation on my intimacy with nature: water, air, and biological
                                         bodies; through the way we flow, intertwine, and harmonize this school of lives
                                         together.
                                     </p>
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3ccc0a (update content + minor styling)
                                     <h5 class="session-title">⤷ SESSION 7. Sound </h5>
                                     <ul>
                                         <li>Understanding the concept of sound.</li>
@@ -563,6 +618,7 @@
                                         our seeing and hearing.
                                     </p>
                                     <h5 class="session-title">PROJECT 4: Personal Periscope</h5>
+<<<<<<< HEAD
                                     <!-- <iframe class="p5-embed" height="500px"
                                         src="https://editor.p5js.org/nhaninsummer/full/xDxh9Y3Ge"></iframe> -->
                                     <img style="padding-bottom:10px" width="100%" src="scr/p4-sample-thumb.gif">
@@ -572,6 +628,12 @@
                                             href="https://editor.p5js.org/nhaninsummer/full/xDxh9Y3Ge"><i>People Of
                                                 CodeSurfing</i></a> ⎯ Prototype of a wave visualization
                                         where all the people of
+=======
+                                    <iframe class="p5-embed" height="500px"
+                                        src="https://editor.p5js.org/nhaninsummer/full/xDxh9Y3Ge"></iframe>
+                                    <p class="description">
+                                        Sample Project: Prototype of a wave visualization where all the students of
+>>>>>>> d3ccc0a (update content + minor styling)
                                         CodeSurfing are riding the waves
                                         according to real-time update of wind data in Ho Chi Minh City, Vietnam.
                                     </p>
@@ -700,10 +762,10 @@
                                 <a class="nav-link" href="#feedback">
                                     <h2>Feedback</h2>
                                 </a>
-                                <div class="d-flex"><img src="./scr/sunset-ocean.gif"
-                                        class="img-fluid  d-block sunset ">
-                                    <img src="./scr/sunset-ocean.gif" class="img-fluid  d-block sunset">
-                                    <img src="./scr/sunset-ocean.gif" class="img-fluid  d-block sunset">
+                                <div class="d-flex justify-content-between">
+                                    <img src="./scr/sunset-ocean.gif" class="img-fluid sunset ">
+                                    <img src="./scr/sunset-ocean.gif" class="img-fluid sunset">
+                                    <img src="./scr/sunset-ocean.gif" class="img-fluid sunset">
 
                                 </div>
 
