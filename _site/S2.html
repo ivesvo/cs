@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>𝒞𝑜𝒹𝑒 𝒮𝓊𝓇𝒻𝒾𝓃𝑔</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/lecture.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#toc">
+    <div class="container">
+        <div class="row  d-flex flex-wrap-reverse">
+            <!-- MAIN CONTENT COLUMN -->
+            <div class="col-md-3" id="lecture-toc">
+                <h1>S2. Control</h1>
+                <nav id="toc" data-toggle="toc"></nav>
+            </div>
+            
+            <div class="col-md-6" id="lecture-content">
+                <h2 id="-objectives">📌 Objectives</h2>
+<p>After this sessions, students are able to:</p>
+<ul>
+  <li>Use map() to convert a value from its range to another.</li>
+  <li>Use if-else to control the flow of their code.</li>
+  <li>Create simple interaction using mousePressed() and keyPressed()</li>
+  <li>Practice clean code and documentation.</li>
+</ul>
+
+<h2 id="warm-up">🌞 Warm-up</h2>
+<p>Today topic is all about interaction. Introduce an artwork/game/software that is based on mouse or keyboard interaction.
+For example:</p>
+<ul>
+  <li>
+    <p><a href="https://experiments.withgoogle.com/land-lines">Land Lines by Zach Lieberman</a>
+<img src="https://lh3.googleusercontent.com/1IlnmzAuSWD5w83l9nJed2LPlTODNg_iKtXnVxw4_6Ek92PVBStidO_4YNCqmi7C3jbnDPYN1MsjNkHXz3op3mPTqdoJ7m-gOuAm" /></p>
+  </li>
+  <li>
+    <p><a href="https://www.google.com/search?si=ALGXSlbfutuq-B7BDdtCoU16ZfJfTzE8eqZQRs-AnSFaKXhXHOSk-gM8YpNE-X3mxNCFFL1Kun_a&amp;hl=en-VN&amp;kgs=1785550dc5e43830&amp;shndl=21&amp;source=sh/x/fbx/m1/1">Snake Game</a>
+<img src="https://www.google.com/logos/fnbx/snake_arcade/cta_alt.png" /></p>
+  </li>
+</ul>
+
+<h2 id="️teach">🗣️ Teach</h2>
+<p>In the previous session, we have learnt about mouseX, mouseY, and how to use it to control other visual input. For example, location of the visual. 
+In this lecture, we add more “layers” onto the cursor information using map() and flow control.</p>
+
+<p><strong>MOUSE CURSOR WITH MAP FUNCTION</strong></p>
+<ul>
+  <li>The map() function is used to scale a number from one range to another.</li>
+  <li>From that, map() can be used to make more interesting interaction as it decide the scale of the information that control the interation.</li>
+  <li>
+    <p>Demo: Moving mouse vertically to change grayscale</p>
+
+    <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">let</span> <span class="nx">grayValue</span><span class="p">;</span>
+  <span class="nx">grayValue</span> <span class="o">=</span> <span class="nf">map</span><span class="p">(</span><span class="nx">mouseY</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">windowHeight</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+  <span class="nf">fill</span><span class="p">(</span><span class="nx">grayValue</span><span class="p">);</span>
+  <span class="nf">circle</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+<iframe class="p5-embed" height="400" src="https://editor.p5js.org/nhaninsummer/full/F_G80W0xF"></iframe>
+
+<ul>
+  <li>Use map() with <a href="https://p5js.org/reference/#/p5/lerpColor">lerpColor()</a> to blend colors.</li>
+</ul>
+<iframe class="p5-embed" height="400" src="https://editor.p5js.org/nhaninsummer/full/N6WNNHCFf"></iframe>
+
+<h2 id="️activity-changing-color">🏄🏻‍♂️ Activity: Changing color</h2>
+<p>Continue the last session drawing by making the color of an element change according to mouse movement. 
+For example: Mouse move up and down to change the color of the sky from light to dark.</p>
+
+<h2 id="️teach-1">🗣️ Teach</h2>
+<p><strong>MOUSE CURSOR WITH IF CONDITION</strong></p>
+<ul>
+  <li>The <i>if</i> statement is used to control the flow of our code.</li>
+  <li>For example: Moving mouse → change sketch color.
+    <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">TBD</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>The structure of an if statement:
+    <blockquote>
+      <p>if (<em>condition</em>) {<em>expression</em>} 
+  else {<em>expression</em>}</p>
+
+      <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">if </span><span class="p">(</span><span class="o">*</span><span class="nx">condition</span><span class="o">*</span><span class="p">)</span> 
+      <span class="p">{</span><span class="nx">code</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">executed</span> <span class="nx">when</span> <span class="nx">the</span> <span class="nx">condition</span> <span class="nx">is</span> <span class="nx">satisfied</span><span class="p">}</span> 
+  <span class="k">else</span> 
+      <span class="p">{</span><span class="nx">code</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">executed</span> <span class="nx">when</span> <span class="nx">the</span> <span class="nx">condition</span> <span class="nx">is</span> <span class="nx">not</span> <span class="nx">satisfied</span><span class="p">}</span>
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Execution order: Code will be executed from top to bottom and from inside out.</li>
+  <li>Notice that the conditions must be wrapped around parentheses ( ).</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Many conditions can be used using &amp; (and) or</td>
+          <td>(or).</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Notice that the code to be executed must be wrapped around curly brackets { }.</li>
+  <li>Notice the indentation (tab before line of code).</li>
+</ul>
+
+<h2 id="️activity-changing-color-1">🏄🏻‍♂️ Activity: Changing color</h2>
+<ul>
+  <li>Changing color of an element in your drawing when hovering onto them.</li>
+</ul>
+
+<h2 id="️activity-bouncing-ball">🏄🏻‍♂️ Activity: Bouncing ball</h2>
+<ul>
+  <li>Write pseudo code to make bouncing ball. <em>(The ball goes backward when hitting the wall.)</em></li>
+</ul>
+
+<h2 id="️teach-2">🗣️ Teach</h2>
+<ul>
+  <li>Live code bouncing ball.
+    <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">TBD</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Use Boolean variable to create a toggle for backward and forward.</li>
+  <li>Use random( ) to make it go in random direction.</li>
+</ul>
+
+<h2 id="️-break">☕️ BREAK</h2>
+
+<h2 id="️teach-3">🗣️ Teach</h2>
+<p><strong>MOUSE INTERACTIVITY</strong></p>
+<ul>
+  <li>Beside tracking the positions of mouse cursor, we can also create interaction with mouse.</li>
+  <li>mousePressed(), mouseClicked(): built-in functions that listen to the click event.
+    <ul>
+      <li>These functions are called separately outside of the draw() function as they don’t need to be called in every frame.</li>
+      <li>Students can explore other functions: mouseDragged(), mouseReleased(), and doubleClicked() on their own.</li>
+    </ul>
+  </li>
+  <li>keyPressed() and keyCode.
+    <ul>
+      <li>Organize all the key interaction within the keyPress() function</li>
+    </ul>
+  </li>
+  <li>In order to not confuse the students, we only teach them to organize all the interaction with mouse in mousePressed() and all the interaction with keyboard in keyPressed(). We are not using mouseIsPressed and keyIsPressed for now.</li>
+</ul>
+
+<p><strong>TIDY CODE</strong></p>
+<ul>
+  <li>Indent is important in coding as it defines the scope of your line of code and its order to be executed.</li>
+  <li>Using “Tidy Code” to quickly format the code.</li>
+  <li>Also adding documentation using “//” to help not only others who use the code but also the writer in future adjustment.</li>
+</ul>
+
+<h2 id="️activity-open-and-close-door">🏄🏻‍♂️ Activity: Open and close door</h2>
+<ul>
+  <li>Continue with the drawing of your window in the last session.</li>
+  <li>Design an on-screen button to open/close the window of the drawing.</li>
+</ul>
+
+<h2 id="️activity-make-your-screen-saver">🏄🏻‍♂️ Activity: Make your screen saver</h2>
+<ul>
+  <li>Make a screen saver that:
+    <ul>
+      <li>Has something that moves around and bounces or react to the borders of the window.</li>
+      <li>The screen waits for 5 seconds to start the screen-saver and clear when mouse Press.
+        <ul>
+          <li>Hint: using clear() to clear your canvas.</li>
+        </ul>
+      </li>
+      <li>While in the screensaver mode, press a secret key to open a secret visual.</li>
+    </ul>
+  </li>
+  <li>Students can turn the previous “Window” sketch into a screensaver.</li>
+  <li>Code needs to be tidied and documented.</li>
+</ul>
+
+            </div>
+
+            <!-- NAV BAR COLUMN -->
+            <div class="col-md-3 " id="site-nav">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-md d-flex">
+                        <a class="navbar-brand" href="#"> </a>
+                        <button id="OpenMenu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span>
+                                <img src="/scr/burger_logo.png" class="img-fluid burger">
+                            </span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+
+                                <img src="/scr/wordmark.png" class="img-fluid surf" id="offcanvasExampLabel">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body flex-wrap">
+                                <a class="nav-link" href="/">
+                                    <img src="/scr/codesurfing_logo.png" class="img-fluid small-logo" id="offcanvasExampLabel">
+                                </a>
+
+                                <a class="nav-link" href="#contents">
+                                    <h2 data-toc-skip>Sensory Narratives</h2>
+                                </a>
+
+
+                                <ul class="list-group-item px-4">
+                                    <h5><a class="nav-item dropdown" href="#connect">Unit 1: Connect</a></h5>
+                                    <span data-toggle="collapse" href="#flush-collapseOne"
+                                        class="list-group-item list-group-item-single btn-link">⤷ first
+                                        interaction</span>
+                                    <span href="#animation" class="list-group-item list-group-item-single ">⤷
+                                        control</span>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ transformation &
+                                        iteration</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ project 1: First
+                                        Letter</a>
+                                </ul>
+
+                                <ul class="list-group-item px-4">
+                                    <h5><a href="#transmit-vision">Unit 2: Transmit Vision</a></h5>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ working with
+                                        images</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ from pixel to
+                                        image</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ more than just
+                                        pixels</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ project 2: Trace of a
+                                        City</a>
+
+                                </ul>
+
+                                <ul class="list-group-item px-4">
+                                    <h5><a href="#transmit-sound">Unit 3: Transmit Sound</a></h5>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ sound</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ visualize sound</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ visualize sound</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ project 3:
+                                        Soundscape</a>
+                                </ul>
+
+
+                                <ul class="list-group-item px-4">
+                                    <h5><a href="#transmit-data">Unit 4: Transmit Data</a></h5>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ the data
+                                        pipeline</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ the story of
+                                        data</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ realtime</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ project 4: Personal
+                                        Periscope</a>
+                                </ul>
+
+                                <a class="nav-link" href="#howto">
+                                    <h2 data-toc-skip>How To Use This Resource</h2>
+                                </a>
+                                <a class="nav-link" href="#feedback">
+                                    <h2 data-toc-skip>Feedback</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <script src="/sketch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
+    <!-- add after bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+</body>
+
+</html>
