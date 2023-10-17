@@ -1,5 +1,4 @@
 body {
-    background-color: rgb(255, 245, 151);
     font-family: 'Epilogue', sans-serif;
     font-size: var(--font-size);
     background: white;
@@ -8,7 +7,7 @@ body {
     line-height: 1.55em;
 }
 
-
+/*************** typography ***************/
 /* using this depends on the screensize */
 :root {
     --font-size: calc(10px + 0.28vw);
@@ -47,12 +46,12 @@ p {
     margin-bottom: 0.5rem;
 }
 
-/* hightlight of text */
+/* highlight */
 ::selection {
     background: rgba(255, 244, 80, .7);
 }
 
-.highlight {
+.highlight_ {
     background: rgba(255, 244, 80, .7);
 }
 
@@ -120,6 +119,12 @@ img {
     margin-top:0.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+    img {
+        width:100%;
+    }
+}
+
  
 pre {
     background-color: white;
@@ -145,6 +150,12 @@ aside {
     margin: 2px auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .tag {
+        border: none;
+    }
+}
+
 td {
     color: rgb(101, 97, 79) !important;
     vertical-align: top;
@@ -156,7 +167,7 @@ table{
 }
 
 
-
+/* ******** sample lecture ********** */
 @media (min-width: 768px){
     #lecture-toc {
       position: absolute;
@@ -233,6 +244,7 @@ table{
 
 }
 
+/* NAV BAR*/
 @media only screen and (max-width: 600px) {
     :root {
         --font-size: 3.2vw;
@@ -317,7 +329,7 @@ section {
     align-items: flex-start;
     --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0);
     justify-content: right;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 @media (min-width: 986px) {
@@ -330,7 +342,6 @@ section {
     }
 }
 
-
 /* .navbar-toggler{
     border: 2px dotted rgba(101,97,79, .5);
 } */
@@ -338,8 +349,6 @@ section {
 .offcanvas-body {
     display: flex;
     flex-direction: column;
-
-
 }
 
 .keyword {
@@ -396,7 +405,7 @@ ul {
     cursor: pointer;
 }
 
-/* CAROUSEL */
+/* IMAGE CAROUSEL */
 .carousel_container {
     max-width: 1200px;
     width: 100%;
