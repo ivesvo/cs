@@ -40,6 +40,6 @@
 
   @media only screen and (max-width: 992px) {
     .small-logo{
-        display: none;
+        display:none;
     }
   }
