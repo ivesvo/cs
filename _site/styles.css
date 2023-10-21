@@ -256,12 +256,12 @@ table{
 
     .surf {
         max-height: 10px;
-        width:auto;
+        width: auto !important;
     }
 
     .sunset {
         max-height: calc(10px + 0.2vw) !important;
-        width: auto;
+        width: auto !important;
         margin: 0 !important;
     }
 
