@@ -256,10 +256,12 @@ table{
 
     .surf {
         max-height: 10px;
+        width:auto;
     }
 
     .sunset {
         max-height: calc(10px + 0.2vw) !important;
+        width: auto;
         margin: 0 !important;
     }
 
@@ -286,6 +288,7 @@ table{
 
 .burger {
     max-height: 30px;
+    width: auto;
 }
 
 section {
