@@ -119,11 +119,11 @@ img {
     margin-top:0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
-    /* img {
+/* @media only screen and (max-width: 600px) {
+    img {
         width:100%;
-    } */
-}
+    }
+} */
 
  
 pre {
@@ -256,12 +256,12 @@ table{
 
     .surf {
         max-height: 10px;
-        width: auto !important;
+        /* width: auto !important; */
     }
 
     .sunset {
         max-height: calc(10px + 0.2vw) !important;
-        width: auto !important;
+        /* width: auto !important; */
         margin: 0 !important;
     }
 
