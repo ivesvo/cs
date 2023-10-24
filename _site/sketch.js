@@ -39,6 +39,11 @@ for (let i = 0; i < images.length; i++) {
   }
 }
 
+
+//close offcanvas
+
+
+
 // CAROUSEL
 const initSlider = () => {
   const imageList = document.querySelector(".slider-wrapper .image-list");
