@@ -7,7 +7,9 @@ body {
     line-height: 1.55em;
 }
 
+
 /*************** typography ***************/
+
 /* using this depends on the screensize */
 :root {
     --font-size: calc(10px + 0.28vw);
@@ -19,11 +21,13 @@ body {
 
 h2 {
     font-size: var(--h2-size);
+
     margin-top: 0.5rem;
 }
 
 h3 {
     font-size: var(--h3-size);
+
     margin-top: 0.5rem;
 }
 
@@ -33,6 +37,7 @@ h4 {
 
 h5 {
     font-size: var(--h5-size);
+
     margin-bottom: 0.5rem;
 }
 
@@ -65,7 +70,9 @@ h5,
 p {
     color: rgb(101, 97, 79);
     --bs-nav-link-hover-color: #c5c4b7;
+
     margin-bottom:0;
+
 }
 
 a,
@@ -73,6 +80,7 @@ a,
     color: rgb(101, 97, 79);
     text-decoration: none;
 }
+
 
 a:hover,
 .list-group-item-single:hover {
@@ -96,6 +104,7 @@ a:hover,
     max-height: 300px;
     max-width: fit-content;
 }
+
 
 .small-logo {
     max-width:50%;
@@ -220,7 +229,6 @@ table{
     margin-top:15px;
 } 
 
-
 /* Hide code embed on mobile and show gif instead*/
 @media screen and (max-width: 480px) {
     .p5-embed {
@@ -285,6 +293,7 @@ table{
 
 .surf {
     max-height: 40px;
+
 }
 
 .burger {
@@ -345,6 +354,8 @@ section {
     }
 }
 
+
+
 /* .navbar-toggler{
     border: 2px dotted rgba(101,97,79, .5);
 } */
@@ -360,6 +371,7 @@ section {
 }
 
 
+
 /***************** POP UP MODAL ***************/
 .modal-backdrop {
     background: radial-gradient(circle, rgba(72, 212, 255, 1) 0%, rgba(255, 244, 80, 1) 74%, rgba(197, 196, 183, 1) 100%);
@@ -369,8 +381,10 @@ section {
     opacity: .9 !important;
 }
 
+
 .modal-header,
 .modal-body {
+
     color: rgb(101, 97, 79) !important;
 }
 

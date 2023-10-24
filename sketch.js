@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   var myOffcanvas = document.getElementById('offcanvasExample');
   var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
