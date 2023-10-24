@@ -136,7 +136,7 @@ pre {
     margin:10px;
 }
 
-aside {
+aside, blockquote {
     background-color: rgba(224, 224, 224, 0.731);
     padding: 20px;
     margin: 10px 0 10px 0;
