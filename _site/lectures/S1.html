@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>𝒞𝑜𝒹𝑒 𝒮𝓊𝓇𝒻𝒾𝓃𝑔</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/lecture.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#toc">
+    <div class="container">
+        <div class="row  d-flex flex-wrap-reverse">
+            <!-- MAIN CONTENT COLUMN -->
+            <div class="col-md-3" id="lecture-toc">
+                <h1 data-toc-skip>S1. First Interaction</h1>
+                <nav id="toc" data-toggle="toc"></nav>
+            </div>
+            
+            <div class="col-md-6" id="lecture-content">
+                <h2 id="-objectives">📌 Objectives</h2>
+<p>After this session, students are able to:</p>
+<ul>
+  <li>Create an account on https://editor.p5js.org</li>
+  <li>Describe what p5.js is and things you can create with p5.js</li>
+  <li>Simply describe the use of function</li>
+  <li>Understand p5 canvas’ coordinate system</li>
+  <li>Use p5 built-in libraries to
+    <ul>
+      <li>Draw simple shapes</li>
+      <li>Color the shapes</li>
+      <li>Make the shapes follow mouse cursor.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="warm-up">🌞 Warm-up</h2>
+<p class="hightlight_">Before the class starts, participants should access and sign up https://editor.p5js.org.</p>
+
+<p>Brief introduction about the course.</p>
+<ul>
+  <li>Class theme and philosophy</li>
+  <li>Course structure and duration</li>
+  <li>Introduce to class’ communication and resources hub (this website).</li>
+</ul>
+
+<p>We start by discussing about two creative projects that are based on computation.</p>
+
+<blockquote>
+  <p>👨🏻‍🏫  NOTES:</p>
+
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">For teachers</code>: The selection of projects is up to teachers. But you should choose projects that students can try or play, or the projects that clearly emphasize the interaction between human and computer.</li>
+    <li><code class="language-plaintext highlighter-rouge">For students</code>: You can explore more examples at the <a href="https://showcase.p5js.org/#/">p5 examples</a> or in CodeSurfing’s readings archive.</li>
+  </ul>
+</blockquote>
+
+<p>Suggestions:</p>
+
+<iframe src="https://www.youtube.com/embed/aKiyCeIuwn4?si=MwfLAKszoYSFKpyi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<p class="description">Clappy Bird by The Coding Train</p>
+
+<iframe src="https://www.youtube.com/embed/Qo6n8MuEgdQ?si=l0mG5FHdpSS0_iAB&amp;start=1271" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<p class="description">Music Follows Hand Gestures by Rebecca Fiebrink</p>
+
+<p><img src="https://freight.cargo.site/w/1000/q/94/i/e1786b6df7a8b2e2134cde8ab4672b08fcfd265876d167b9c09cfd34d189cf87/first.jpg" alt="A display of a swamp which has its environment isolated and adjusted using Deep Learning." href="https://tegabrain.com/Deep-Swamp" /></p>
+<p class="description">Deep Swamp by Tega Brain</p>
+
+<blockquote>
+  <p>DISCUSSION</p>
+
+  <ul>
+    <li>What mediums are these projects on?</li>
+    <li>How do the audiences interact with the artwork?</li>
+    <li>What is the purpose of code in each project? (Eg: it is used to process users’ voice)</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>👨🏻‍🏫  NOTES:</p>
+
+  <p><code class="language-plaintext highlighter-rouge">For teacher</code>: This can be done as a group activity with guided questions, or if time is limited, teachers can just teach while asking students these questions.</p>
+</blockquote>
+
+<h3 id="the-idea-of-programming">The idea of programming</h3>
+<ul>
+  <li>The main concept of programming bases around <code class="language-plaintext highlighter-rouge">input → code → output</code>. <em>Think about code as a machine that takes inputs as ingredients and spits out output as dishes</em>.</li>
+  <li>Each of the example projects includes “coding” in different way, but it still follows the above idea of code. What are the <em>inputs</em> and <em>outputs</em> of each project?
+    <ul>
+      <li>Clappy Bird: clap (sound) → animation on screen (visual)</li>
+      <li>Music by Hand: hand movement (visual) → music playing (sound)</li>
+      <li>Deep Swamp: environment (data sensor) → data to adjust the aquarium environment (physical computing)</li>
+    </ul>
+  </li>
+  <li>In each project, how do we (or the subject) communicate with the machine?
+    <ul>
+      <li>Clappy Bird: clap → change of sound amplitude → code → change of the location of visual element on screen</li>
+      <li>Music by Hand: movement of hand → change of input data → code → change of music frequency.</li>
+      <li>Deep Swamp: change of environment (e.g. lighting) → change of input data → code → change of lighting data.</li>
+    </ul>
+  </li>
+  <li>Code is a set of rules (algorithms) that maps the input into the output. Or here, adjust the output according to the change of input.</li>
+  <li>This links to our course philosophy: to use coding as a medium to document and react to the change of the nature around us.</li>
+  <li>Show some projects that are built using p5.js. This can be teacher’s personal projects, past students projects, other artists, or the <a href="https://showcase.p5js.org/#/">p5 Showcase</a>. Based on this, students can have a sense of what p5 can do and what to expect as an outcome of this class in term of technicality.</li>
+</ul>
+
+<h3 id="what-is-programming">What is programming?</h3>
+<ul>
+  <li>Computers are devices, including PC, laptop, or mobile phone.</li>
+  <li>Programming is a set of instructions to tell computers what to do. In other words, it maps inputs into outputs.</li>
+  <li>Instructions are written in code. Thus, the process of writing the instructions is call “coding” or “programming”.</li>
+  <li>The purposes of programming are to automate, to connect, and to scale.</li>
+</ul>
+
+<h3 id="programming-for-creativity">Programming for creativity</h3>
+<ul>
+  <li>Programming expands creative possibilities by expanding material, method, and interactivity.</li>
+  <li>Programming can also integrate into other different disciplines.</li>
+</ul>
+
+<h3 id="programming-with-p5js">Programming with p5.js</h3>
+
+<p>In this course, we learn to code using <code class="language-plaintext highlighter-rouge">p5.js</code>. It is a library, written on the language of Javascript. <code class="language-plaintext highlighter-rouge">p5.js</code> is designed for coders who want to create interactive, visual programs that run directly in a web page. It’s designed for creative coding, and it sits right at the intersection of coding and art.</p>
+
+<p>📖 Show some projects that are built using p5.js. This can be teacher’s personal projects, past students’ projects, other artists’, or the <a href="https://showcase.p5js.org/#/">p5 Showcase</a>. Based on this, students can have a sense of what p5 can do and what to expect as an outcome of this class in term of technicality.</p>
+
+<h3 id="advantages-of-p5js">Advantages of p5.js</h3>
+<ul>
+  <li>Designed for creative coding.</li>
+  <li>Can be integrated with other platforms.</li>
+  <li>Collaborative: easy to show, duplicate, and share.</li>
+  <li>Easy to access: p5 editor, documentation, and supporting resources.</li>
+  <li>Open source.</li>
+  <li>The Processing Community.</li>
+</ul>
+
+<h2 id="️activity-human-fax-machine">🏄🏻‍♂️ Activity: Human Fax Machine</h2>
+<ul>
+  <li>Students are divided into pairs. Each pair is given a serie of drawings that they need to copy.
+But only one member can see the drawing and they need to use words to guide the other to draw.</li>
+  <li>Drawings are simple shapes that range from easy to difficult to draw. For example:
+<img src="/lectures/assets/s1_thumb_1.png" /></li>
+</ul>
+
+<p><b>REFLECTION</b></p>
+
+<ul>
+  <li>What we have done is a metaphor of programming with the instructor as programmer, the painter as computer, and the action of instructing to draw is programming.</li>
+  <li>Drawing instructions need to follow some sort of agreements - <i>rules</i> and <i>coordinate system</i>
+    <ul>
+      <li>Rules: The instructor and the painter must agree on terms and concepts like “what does it mean by saying <code class="language-plaintext highlighter-rouge">rectangle</code>?”, “what does it mean by saying <code class="language-plaintext highlighter-rouge">repeat</code>?”. Agreement on this forms a standard instruction between the instructor and the painter. Or in the context of programming, between the writer and the computer, we call it <code class="language-plaintext highlighter-rouge">syntax</code>. Every language has its own <code class="language-plaintext highlighter-rouge">syntax</code>, which is to instruct computer do a specific task. These syntax is mandatory and must be followed. For example, in order to draw a circle in p5.js, we must call <code class="language-plaintext highlighter-rouge">circle()</code>, which is a term that can be understood by p5.js.</li>
+      <li>The coordinate system shows us how to navigate on the <code class="language-plaintext highlighter-rouge">canvas</code>, like a map. Each coordinate includes a measurement of the horizontal axis <code class="language-plaintext highlighter-rouge">x</code> and another one of the vertical axis <code class="language-plaintext highlighter-rouge">y</code>. This helps computers execute the drawing instruction exactly at where we want. In p5.js the position (0, 0) is at the top left.
+  <img src="https://static-assets.codecademy.com/Courses/Learn-p5/animation/canvas-origin.png" /></li>
+    </ul>
+  </li>
+  <li>To finish a drawing, we have to divide it into small subtasks. Finishing all of them leads to the finish of our drawing.</li>
+  <li>Programming works on the same concept. In order to complete a big task, we write codes that execute small tasks. Each chunk of code is called <code class="language-plaintext highlighter-rouge">function</code>. Each function has its own purpose. For example, to finish drawing a robot, we might have functions to draw different parts of a robot, for example: <code class="language-plaintext highlighter-rouge">eye()</code>, <code class="language-plaintext highlighter-rouge">nose()</code>, <code class="language-plaintext highlighter-rouge">face()</code>, … This is not just to help break down the solution to easier task, but also help us efficiently re-use the code. We will discuss more about function later.</li>
+</ul>
+
+<h2 id="️teach">🗣️ Teach</h2>
+
+<blockquote>
+  <p>👨🏻‍🏫 Notes for teachers while teaching</p>
+
+  <p>Despite knowing the syntax, teachers should demonstrate the use of documentation so students can get used to it and practice by themselves.
+Getting bugs while live-coding is a good chance to teach debugging! Don’t shy away.</p>
+</blockquote>
+
+<h3 id="p5js-editor">p5.js editor</h3>
+
+<ul>
+  <li>p5 Web Editor makes it easier to code.
+    <ul>
+      <li>Users can write and run the code instantly to see the result.</li>
+      <li>All the coding happens on the cloud, not in your local machine. Just like Google Docs.</li>
+      <li>There are options to share your sketch in different views: edit or fullscreen.</li>
+      <li>Sketches are saved and organized.</li>
+      <li>The p5 Web Editor also have a mobile version that students can explore later.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="function-basic-shapes-and-styling">Function, basic shapes, and styling</h3>
+
+<ul>
+  <li>p5.js has many built-in functions for example the drawing functions.
+    <ul>
+      <li>p5.js provides user with a well-written documentation at https://p5js.org/reference/.</li>
+      <li>It’s a common practice in program to use documentation as a guide, even for senior programmers as syntax might change and vary from time to time, in different libraries.</li>
+    </ul>
+  </li>
+  <li>Function is like a box that can take inputs, process the inputs, and produce outputs.
+    <ul>
+      <li>A function input is restrictedly designed by the one who wrote the function.</li>
+      <li>A function can require one, many, or no inputs.</li>
+      <li>Similarly, a function can also produce one, many, or no outputs.</li>
+      <li>The inputs of a function are called <code class="language-plaintext highlighter-rouge">parameter</code>.</li>
+    </ul>
+  </li>
+  <li>Function can be built-in (provided by the library by default), or designed by developers - us. We stick with the built-in functions for now.</li>
+  <li>By default of the p5 editor, there are two functions <code class="language-plaintext highlighter-rouge">setup()</code> and <code class="language-plaintext highlighter-rouge">draw()</code>. We will more about these two functions later.</li>
+  <li>For now, all the code for drawing will be written within the <code class="language-plaintext highlighter-rouge">draw()</code> function. By <em>within</em> we mean that every drawing code should be within the curly brackets “{}” of the function and has an indent - a tab at the beginning of the line compared to the function line.</li>
+  <li>
+    <p>Inside the <code class="language-plaintext highlighter-rouge">setup()</code> function, we write the all the set-up needed for our drawing. For example, <code class="language-plaintext highlighter-rouge">createCanvas()</code> sets up a <code class="language-plaintext highlighter-rouge">canvas</code> on which we can draw. Change parameters inside to change the size of the canvas. For example, <code class="language-plaintext highlighter-rouge">createCanvas(300, 300)</code> to create a 300px * 300px canvas.</p>
+  </li>
+  <li>Introduce <code class="language-plaintext highlighter-rouge">circle()</code> built-in function. Search <a href="https://p5js.org/reference/">Reference</a> and answer:
+    <ul>
+      <li>What does <code class="language-plaintext highlighter-rouge">circle()</code> do?</li>
+      <li>What are the required inputs of the function?</li>
+      <li>What is the output of the function?
+<script type="text/p5" data-p5-version="1.7.0" data-autoplay="" data-preview-width="300" src="/lectures/snippets/s1_circle.js"></script></li>
+    </ul>
+  </li>
+  <li>Add color into the sketch.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">background()</code>: to change the background color.</li>
+      <li><code class="language-plaintext highlighter-rouge">fill()</code> and <code class="language-plaintext highlighter-rouge">noFill()</code>: to fill color into the shapes.</li>
+      <li><code class="language-plaintext highlighter-rouge">stroke()</code> and <code class="language-plaintext highlighter-rouge">noStroke()</code>: to change color of the border of the shapes.</li>
+      <li><code class="language-plaintext highlighter-rouge">strokeWeight()</code>: to change the thickness of the border of the shapes.</li>
+    </ul>
+  </li>
+  <li>All the functions above receive parameters as color code in RGB.
+    <ul>
+      <li>A common RGB color code looks like <code class="language-plaintext highlighter-rouge">(255, 48, 67)</code>, for example. It includes measurement of color in three channels Red, Green, and Blue.</li>
+      <li>So a finish syntax would look like <code class="language-plaintext highlighter-rouge">background(255, 48, 67)</code></li>
+      <li>Read more about RGB colors: https://p5js.org/learn/color.html</li>
+      <li>Pick your <a href="https://www.google.com/search?q=color+pickers&amp;oq=color+pickers&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE0NzRqMGo0qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8">your own RGB color</a></li>
+      <li>Transparency: In case you want to add opacity into your drawing, you can decide it at the forth channel - <em>alpha</em>, with value ranges from 0 (completely transparent) to 255 (completely solid). For example: <code class="language-plaintext highlighter-rouge">background(255, 48, 67, 100)</code></li>
+    </ul>
+  </li>
+</ul>
+
+<script type="text/p5" data-p5-version="1.7.0" data-autoplay="" data-preview-width="300" src="/lectures/snippets/s1_color.js"></script>
+
+<ul>
+  <li>Order of code matters in p5.
+    <ul>
+      <li>The styling functions (color and stroke) need to be called <strong>before</strong> the drawing functions that they apply to.</li>
+    </ul>
+  </li>
+</ul>
+
+<script type="text/p5" data-p5-version="1.7.0" data-autoplay="" data-preview-width="300" src="/lectures/snippets/s1_order.js"></script>
+
+<h2 id="️activity-draw-a-window">🏄🏻‍♂️ Activity: Draw a window</h2>
+
+<ul>
+  <li>Looking through a window, what do you see? Draw it using only basic shapes.
+<em>(It can be the window of your room, your parents, this classroom, or any window in your imagination)</em></li>
+  <li>Starter Code:</li>
+</ul>
+
+<iframe class="p5-embed" height="500px" src="https://editor.p5js.org/nhaninsummer/full/Gb4I0Poyf"></iframe>
+
+<ul>
+  <li>Remember to use p5.js <a href="https://p5js.org/reference/">Reference</a> as a guide.</li>
+  <li>Explore other drawing functions (<code class="language-plaintext highlighter-rouge">rectangle</code>, <code class="language-plaintext highlighter-rouge">triangle</code>, <code class="language-plaintext highlighter-rouge">ellipse</code>, <code class="language-plaintext highlighter-rouge">arc</code>) to enrich your drawing.</li>
+</ul>
+
+<h2 id="️-break">☕️ Break</h2>
+
+<h2 id="️teach-1">🗣️ Teach</h2>
+
+<p><strong>STRUCTURE OF A P5 SKETCH</strong></p>
+<ul>
+  <li>The <em>setup()</em> function is executed first and executed for only one time when you run a p5 sketch.</li>
+  <li>The <em>draw()</em> function is executed after the <code class="language-plaintext highlighter-rouge">setup()</code> and executed repeatedly according to the the setting of <code class="language-plaintext highlighter-rouge">frame rate</code>.</li>
+  <li>In the below example:
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">background</code> is moved to <code class="language-plaintext highlighter-rouge">setup()</code> so the background is only <em>painted</em> one time when we started the sketch.</li>
+      <li>The circle painting is drew on top of each other again and again as the function <code class="language-plaintext highlighter-rouge">draw()</code> repeat. Hence, it’s getting more and more solid.</li>
+      <li>🏄🏻‍♂️ Tweaking the code to experiment yourself.
+<script type="text/p5" data-p5-version="1.7.0" data-preview-width="300" src="/lectures/snippets/s1_opacity_over_time.js"></script></li>
+    </ul>
+  </li>
+  <li>frameRate: number of frames appear in one second - fps. By default, 60 frames per second.</li>
+  <li>We can adjust the frame rate by adding, for example, <em>frameRate(10)</em> in the <code class="language-plaintext highlighter-rouge">setup()</code> to adjust the frame rate to 10 frames per second.</li>
+</ul>
+
+<p><strong>VARIABLE, ANIMATION, AND MOUSE INTERACTIVITY</strong></p>
+<ul>
+  <li>Now that we have a still drawing, let make it move. For example, make the circle move across the canvas.</li>
+  <li>In order to make the circle move across the screen, we need to adjust its location over time. For example, to move to the right, we need to increase its x-coord by 1 every frame.</li>
+  <li>Instead of giving a fixed location, we now use <code class="language-plaintext highlighter-rouge">variable</code> to host the value of x-coord. So we can give a new value to the variable x at every frame. And by that, make the circle move.</li>
+</ul>
+
+<p>The syntax will look like this:
+<script type="text/p5" data-p5-version="1.7.0" data-preview-width="300" src="/lectures/snippets/s1_moving_circle.js"></script></p>
+
+<blockquote>
+  <p>Observations:</p>
+  <ul>
+    <li>Using <code class="language-plaintext highlighter-rouge">let</code> to declare a variable.</li>
+    <li>Using <code class="language-plaintext highlighter-rouge">=</code> to assign value to a variable.</li>
+    <li>As the draw() repeats itself every frame, we can use it to increase our x-coord.</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>Beside variables that are declared by users, we also have system variables. They are variables but reserved by the library by default.</li>
+  <li>For example, <em>mouseX</em> and <em>mouseY</em> are system variables that host the location of the mouse cursor on the canvas.</li>
+  <li>Using <em>mouseX</em> and <em>mouseY</em> to move the circle.</li>
+</ul>
+
+<h2 id="️activity-animate-and-interact">🏄🏻‍♂️ Activity: Animate and Interact</h2>
+
+<ul>
+  <li>Pick one element of your drawing and make them animate.
+    <ul>
+      <li>Adjust the opacity of the object and background to create blurry effect.</li>
+      <li>Adjust the speed of the animation</li>
+    </ul>
+  </li>
+  <li>Pick one element of your drawing and make them follow the mouse.</li>
+</ul>
+
+<h2 id="cool-down--qa">🌅 Cool-down / Q&amp;A</h2>
+
+<ul>
+  <li>Variable naming conventions: <a href="https://en.wikipedia.org/wiki/Naming_convention_(programming)">variable naming convention</a>,</li>
+  <li>Zoom out and chat about other tools/languages.</li>
+  <li>In 1 minute, write down 3 things that you learn from this session.</li>
+</ul>
+
+<h2 id="assignment">🤹 Assignment</h2>
+
+<ul>
+  <li>Continue on your drawing.</li>
+  <li>Make at least one animation.</li>
+  <li>Make at least one mouse interaction.</li>
+</ul>
+
+<blockquote>
+  <p>👨🏻‍🏫 Notes for teachers:</p>
+
+  <ul>
+    <li>Optional but not recommend to ask students to share with class because some might be shy and discouraged as it is their very first exercise).</li>
+  </ul>
+</blockquote>
+
+<h2 id="further-readings--resources">📚 Further Readings &amp; Resources</h2>
+
+<ul>
+  <li><i>[example]</i> <a href="https://gateway.fxhash2.xyz/ipfs/QmUaiS3TUBeiVxy3KoVfjMsgNfkWXhhNF8FVpP8kqcXkzc/?fxhash=ooNMpaWqmnXS1se2LAcDSDicK7T5Zc2BRLMPpWPo7JgbQbDVsBf">Maya Man - shift reality instantly</a></li>
+</ul>
+
+            </div>
+
+            <!-- NAV BAR COLUMN -->
+            <div class="col-md-3 " id="site-nav">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-md d-flex">
+                        <a class="navbar-brand" href="#"> </a>
+                        <button id="OpenMenu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span>
+                                <img src="/scr/burger_logo.png" class="img-fluid burger">
+                            </span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+
+                                <img src="/scr/wordmark.png" class="img-fluid surf" id="offcanvasExampLabel">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body flex-wrap">
+                                <a class="nav-link" href="/">
+                                    <img src="/scr/codesurfing_logo.png" class="img-fluid small-logo" id="offcanvasExampLabel">
+                                </a>
+
+                                <a class="nav-link" href="#contents">
+                                    <h2 data-toc-skip>Sensory Narratives</h2>
+                                </a>
+
+
+                                <ul class="list-group-item px-4">
+                                    <h5><a class="nav-item dropdown" href="#connect">Unit 1: Connect</a></h5>
+                                    <span data-toggle="collapse" href="#flush-collapseOne"
+                                        class="list-group-item list-group-item-single btn-link">⤷ first
+                                        interaction</span>
+                                    <span href="#animation" class="list-group-item list-group-item-single ">⤷
+                                        control</span>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ transformation &
+                                        iteration</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ project 1: First
+                                        Letter</a>
+                                </ul>
+
+                                <ul class="list-group-item px-4">
+                                    <h5><a href="#transmit-vision">Unit 2: Transmit Vision</a></h5>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ working with
+                                        images</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ from pixel to
+                                        image</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ more than just
+                                        pixels</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ project 2: Trace of a
+                                        City</a>
+
+                                </ul>
+
+                                <ul class="list-group-item px-4">
+                                    <h5><a href="#transmit-sound">Unit 3: Transmit Sound</a></h5>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ sound</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ visualize sound</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ visualize sound</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ project 3:
+                                        Soundscape</a>
+                                </ul>
+
+
+                                <ul class="list-group-item px-4">
+                                    <h5><a href="#transmit-data">Unit 4: Transmit Data</a></h5>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ the data
+                                        pipeline</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ the story of
+                                        data</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ realtime</a>
+                                    <a href="#" class="list-group-item list-group-item-single">⤷ project 4: Personal
+                                        Periscope</a>
+                                </ul>
+
+                                <a class="nav-link" href="#howto">
+                                    <h2 data-toc-skip>How To Use This Resource</h2>
+                                </a>
+                                <a class="nav-link" href="#feedback">
+                                    <h2 data-toc-skip>Feedback</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <script src="/sketch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
+    <!-- add after bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+</body>
+
+</html>

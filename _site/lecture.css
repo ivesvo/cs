@@ -1,0 +1,45 @@
+/* Media */
+#lecture-content iframe {
+    width: 70%;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    #lecture-content iframe {
+        width: 100%;
+        height: 40vw;
+    }
+}
+
+#lecture-content img {
+    width:100%;
+    margin-top:10px;
+}
+
+/* Typo */
+#lecture-content h1 {
+    margin-bottom: 1rem;
+}
+
+#lecture-content h2 {
+    border-bottom: 2px dotted rgba(101,97,79, .5);
+    padding: 10px 10px 10px 0px;   
+}
+
+.highlight code, .highlight pre {
+    color:#fdce93;
+    background-color:#3f3f3f;
+    display: block;
+    padding: 10px;
+  }
+
+
+  /* @media only screen and (max-width: 992px) {
+    .small-logo{
+        display:none;
+    }
+  } */
