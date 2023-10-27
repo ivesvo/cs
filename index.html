@@ -57,14 +57,16 @@
                             We are CodeSurfing, a backyard-science study club in Ho Chi Minh City,
                             Vietnam. Our club brings programming closer to the Vietnamese community through teaching,
                             sharing, and supporting interdisciplinary study in art and technology.</p>
-                            
+
                         <p>
-                            To us, technology is initimate, beautiful, and affordable. At CodeSurfing, we learn and have fun through creating.
+                            To us, technology is initimate, beautiful, and affordable. At CodeSurfing, we learn and have
+                            fun through creating.
                             Activities in CodeSurfing include:
                         </p>
 
                         <ul class="mt-2">
-                            <li>🏄🏻‍♂️ gathering sessions to help participants with no prior experience in programming approach
+                            <li>🏄🏻‍♂️ gathering sessions to help participants with no prior experience in programming
+                                approach
                                 creative coding,</li>
 
                             <li>🏄🏽‍♀️ in-depth class to provide students essential tools to make meaningful designs
@@ -75,7 +77,8 @@
                                 Vietnamese.</li>
 
                         </ul>
-                        Through this, we hope to create a creative community where everyone has the opportunity to excel their
+                        Through this, we hope to create a creative community where everyone has the opportunity to excel
+                        their
                         unique assets in the common language of programming.
 
                         <br><br>CodeSurfing was initiated by <a class="contributors">Nhan Phan</a>, during his
@@ -152,8 +155,8 @@
                             libraries, APIs, and devices to further manifest our artworks in new formats.</p>
                         </p>
 
-                        <img src="scr/course-1-thumb.png"
-                            alt="A man sitting at his desk and working in a forest." class="img-fluid man fs">
+                        <img src="scr/course-1-thumb.png" alt="A man sitting at his desk and working in a forest."
+                            class="img-fluid man fs">
                         <!-- onclick="this.requestFullscreen()"> -->
 
                         <p class="description">[seoulthesoloist]</p>
@@ -170,7 +173,8 @@
                                     <tbody>
                                         <tr>
                                             <td><a href="#connect">UNIT 1: CONNECT</a></td>
-                                            <td>⎯ to establish our first interaction with computer while gaining familiarity
+                                            <td>⎯ to establish our first interaction with computer while gaining
+                                                familiarity
                                                 with the language of p5.js.</td>
                                         </tr>
 
@@ -350,20 +354,23 @@
                 </section>
 
                 <!-- CONTENT -->
+                
                 <section class="welcome">
-                    <div id="contents" class="accordion accordion-flush">
-                        <!-- UNIT 1 -->
-                        <div id="connect" class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
+                    <div class="accordion accordion-flush">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="connect">
+                                <button class="accordion-button collapsed" 
+                                        type="button" 
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" 
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
                                     <h2>Unit 1: Connect</h2>
                                 </button>
                             </h2>
 
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="connect"
+                                data-bs-parent="#accordionFlushExample" >
                                 <div class="accordion-body">
                                     <p>
                                         Ahoy! In this very first unit, we will get to know p5.js, its built-in
@@ -374,7 +381,7 @@
                                         the p5 online documentation.
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center session-title">
-                                        <h5>PROJECT 1. First Letter </h5>
+                                        <h5 id="s1">PROJECT 1. First Letter </h5>
                                         <a class="btn btn-primary mahjong material-symbols-rounded" href="/lectures/S1"
                                             target="_blank" role="button">arrow_outward</a>
                                     </div>
@@ -412,7 +419,7 @@
 
                                     <!--------------------- SESSION 1 ----------------------->
                                     <div class="d-flex justify-content-between align-items-center session-title">
-                                        <h5 id="s1">⤷ SESSION 1. First Interaction </h5>
+                                        <h5 id="first-interaction">⤷ SESSION 1. First Interaction </h5>
 
                                         <a class="btn btn-primary mahjong material-symbols-rounded" href="/lectures/S1"
                                             target="_blank" role="button">arrow_outward</a>
@@ -457,7 +464,7 @@
 
                                     <!--------------------- SESSION 2 ----------------------->
                                     <div class="d-flex justify-content-between align-items-center session-title">
-                                        <h5 id="s2">⤷ SESSION 2. Control </h5>
+                                        <h5 id="control">⤷ SESSION 2. Control </h5>
                                         <h5>
                                             <a data-bs-toggle="collapse" href="#collapseExample" role="button"
                                                 aria-expanded="false" aria-controls="collapseExample">
@@ -511,7 +518,7 @@
 
                                     <!--------------------- SESSION 3 ----------------------->
                                     <div class="d-flex justify-content-between align-items-center session-title">
-                                        <h5>⤷ SESSION 3. Transformation & Iteration </h5>
+                                        <h5 id="iteration">⤷ SESSION 3. Transformation & Iteration </h5>
 
                                         <a data-bs-toggle="collapse" href="#collapseExample" role="button"
                                             aria-expanded="false" aria-controls="collapseExample">
@@ -626,7 +633,7 @@
 
 
                                     <!--------------------- SESSION 4 ----------------------->
-                                    <h5 class="session-title">⤷ SESSION 4. Working with Images </h5>
+                                    <h5 class="session-title id="working-images">⤷ SESSION 4. Working with Images </h5>
                                     <ul>
                                         <li>Programming in local environment: text editor, CLI, and all things
                                             needed.
@@ -640,7 +647,7 @@
                                         <li>🏄🏻‍♂️ Practice: Making Zine</li>
                                     </ul>
 
-                                    <h5 class="session-title">⤷ SESSION 5. From Pixel to Image </h5>
+                                    <h5 class="session-title" id="pixel-to-image">⤷ SESSION 5. From Pixel to Image </h5>
                                     <ul>
                                         <li>Array and array manipulation</li>
                                         <li>Color spaces: RGB and HSL.</li>
@@ -653,7 +660,7 @@
                                         <li>🏄🏻‍♂️ Practice: ASCII Webcam.</li>
                                     </ul>
 
-                                    <h5 class="session-title">⤷ SESSION 6. More Than Just Pixels </h5>
+                                    <h5 class="session-title" id="more-than-pixels">⤷ SESSION 6. More Than Just Pixels </h5>
                                     <ul>
                                         <li><i>Learning</i> images through machine learning.</li>
                                         <li>Image classification</li>
@@ -711,7 +718,7 @@
                                         of lives
                                         together.
                                     </p>
-                                    <h5 class="session-title">⤷ SESSION 7. Sound </h5>
+                                    <h5 class="session-title" id="sound">⤷ SESSION 7. Sound </h5>
                                     <ul>
                                         <li>Understanding the concept of sound.</li>
                                         <li>The physics of sound: Amplitude, frequency, and FFT</li>
@@ -726,7 +733,7 @@
                                         <li>🏄🏻‍♂️ Practice: Spectrogram.</li>
                                     </ul>
 
-                                    <h5 class="session-title">⤷ SESSION 8. Sound Visualization </h5>
+                                    <h5 class="session-title" id="sound-viz">⤷ SESSION 8. Sound Visualization </h5>
                                     <ul>
                                         <li>Object-oriented programming: What is it? How to use it?</li>
                                         <li>Advanced animation with sin, cos, tan</li>
@@ -739,7 +746,7 @@
                                         <li>P5LIVE</li>
                                     </ul>
 
-                                    <h5 class="session-title">⤷ SESSION 9. Sound Visualization </h5>
+                                    <h5 class="session-title" id="sound-viz-2">⤷ SESSION 9. Sound Visualization </h5>
                                     <ul>
                                         <li>Acoustics of music.</li>
                                         <li>Vectors and Forces: Using physics to enrich animation.</li>
@@ -790,7 +797,7 @@
                                         CodeSurfing are riding the waves
                                         according to real-time update of wind data in Ho Chi Minh City, Vietnam.
                                     </p>
-                                    <h5 class="session-title">⤷ SESSION 10. The Data Pipeline </h5>
+                                    <h5 class="session-title" id="data-pipeline">⤷ SESSION 10. The Data Pipeline </h5>
                                     <ul>
 
                                         <li>Getting to know data and what data can do.</li>
@@ -803,7 +810,7 @@
                                         <li>Connect p5 with Google Sheet</li>
                                         <li>🏄🏻‍♂️ Practice: Collect and visualize your own data.</li>
                                     </ul>
-                                    <h5 class="session-title">⤷ SESSION 11. The Story of Data</h5>
+                                    <h5 class="session-title" id="data-story">⤷ SESSION 11. The Story of Data</h5>
                                     <ul>
                                         <li>Descriptive statistics, measurements of data.</li>
                                         <li>Deep dive into data visualization.</li>
@@ -811,7 +818,7 @@
                                         <li>Data source and ethics in using data.</li>
                                         <li>🏄🏻‍♂️ Practice: 50 Ways to Visualize A Data.</li>
                                     </ul>
-                                    <h5 class="session-title">⤷ SESSION 12. Realtime</h5>
+                                    <h5 class="session-title" id="real-time">⤷ SESSION 12. Realtime</h5>
                                     <ul>
                                         <li>Datatype: JSON</li>
                                         <li>Connect p5 with Data API</li>
@@ -848,13 +855,16 @@
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                             aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
-                                    <img src="./scr/codesurfing_logo_small.png" class="img-fluid surf" id="offcanvasExampLabel">
+                                <img src="./scr/codesurfing_logo_small.png" class="img-fluid surf"
+                                    id="offcanvasExampLabel">
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
-                                
-                                    
-                            </div>
 
+
+                            </div>
+                           <div>
+                            
+                           </div>
                             <div class="offcanvas-body flex-wrap">
                                 <a class="nav-link" href="#hello">
                                     <h2>About CodeSurfing</h2>
@@ -870,24 +880,39 @@
 
 
                                 <ul class="list-group-item px-4">
-                                    <h5><a class="nav-item dropdown" href="#connect">Unit 1: Connect</a></h5>
-                                    <span data-toggle="collapse" href="#flush-collapseOne"
-                                        class="list-group-item list-group-item-single btn-link">⤷ first
-                                        interaction</span>
-                                    <span href="#animation" class="list-group-item list-group-item-single ">⤷
-                                        control</span>
-                                    <a href="#s1" class="list-group-item list-group-item-single">⤷
+                                    <h5>
+                                        <a 
+                                        class="nav-item dropdow" 
+                                        href="#connect"
+                                        data-toggle="collapse"
+                                        role="button" aria-expanded="false" 
+                                        aria-controls="flush-collapseOne"
+                                        onClick="openAccordion('flush-collapseOne')">Unit 1: Connect</a>
+                                    </h5>
+                                    <a data-toggle="collapse"
+                                        class="list-group-item list-group-item-single btn-link"
+                                        href="#first-interaction">⤷ first
+                                        interaction</a>
+                                    <a href="#control" class="list-group-item list-group-item-single ">⤷
+                                        control</a>
+                                    <a href="#iteration" class="list-group-item list-group-item-single">⤷
                                         transformation &
                                         iteration</a>
                                 </ul>
 
                                 <ul class="list-group-item px-4">
-                                    <h5><a href="#transmit-vision">Unit 2: Transmit Vision</a></h5>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ working with
+                                    <h5><a 
+                                        href="#transmit-vision"
+                                        data-toggle="collapse"
+                                        role="button" aria-expanded="false" 
+                                        aria-controls="flush-collapseTwo"
+                                        onClick="openAccordion('flush-collapseTwo')">Unit 2: Transmit Vision</a></h5>
+                                    <a href="#working-images" 
+                                       class="list-group-item list-group-item-single">⤷ working with
                                         images</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ from pixel to
+                                    <a href="#pixel-to-image" class="list-group-item list-group-item-single">⤷ from pixel to
                                         image</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ more than just
+                                    <a href="#more-than-pixels" class="list-group-item list-group-item-single">⤷ more than just
                                         pixels</a>
 
 
@@ -895,22 +920,32 @@
                                 </ul>
 
                                 <ul class="list-group-item px-4">
-                                    <h5><a href="#transmit-sound">Unit 3: Transmit Sound</a></h5>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ sound</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ visualize
+                                    <h5><a 
+                                        href="#transmit-sound" 
+                                        data-toggle="collapse"
+                                        role="button" aria-expanded="false" 
+                                        aria-controls="flush-collapseThree"
+                                        onClick="openAccordion('flush-collapseThree')">Unit 3: Transmit Sound</a></h5>
+                                    <a href="#sound" class="list-group-item list-group-item-single">⤷ sound</a>
+                                    <a href="#sound-viz" class="list-group-item list-group-item-single">⤷ visualize
                                         sound</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ visualize
+                                    <a href="#sound-viz-2" class="list-group-item list-group-item-single">⤷ visualize
                                         sound</a>
                                 </ul>
 
 
                                 <ul class="list-group-item px-4">
-                                    <h5><a href="#transmit-data">Unit 4: Transmit Data</a></h5>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ the data
+                                    <h5><a 
+                                        href="#transmit-data" 
+                                        class="open-trigger"
+                                        role="button" aria-expanded="false" 
+                                        aria-controls="flush-collapseFour"
+                                        onClick="openAccordion('flush-collapseFour')">Unit 4: Transmit Data</a></h5>
+                                    <a href="#data-pipeline" class="list-group-item list-group-item-single">⤷ the data
                                         pipeline</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ the story of
+                                    <a href="#data-story" class="list-group-item list-group-item-single">⤷ the story of
                                         data</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ realtime</a>
+                                    <a href="#real-time" class="list-group-item list-group-item-single">⤷ realtime</a>
                                 </ul>
 
                                 <a class="nav-link" href="#">
@@ -939,11 +974,14 @@
 
     </div>
 
+    
+
     <script src="sketch.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>
