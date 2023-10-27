@@ -9,24 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Scroll to anchor and open accordion panel
+function openAccordion(id) {
+  document.getElementById(id).classList.toggle("show");
+}
 
-// Scroll to anchor and open accordion panel/ot working yet
-//    document.querySelectorAll
-//    ('a[data-bs-toggle="collapse"]').forEach(function (link) {
-//        link.addEventListener('click', function (event) {
-//            event.preventDefault();
-//            let target = 
-//                document.querySelector(this.getAttribute('href'));
-//            let accordion = 
-//                document.querySelector(this.getAttribute('data-bs-target'));
 
-//            $('html, body').animate({
-//                scrollTop: $(target).offset().top
-//            }, 500);
-
-//            $(accordion).collapse('show');
-//        });
-//    });
 
 // click fullscreen
 let images = document.querySelectorAll('.fs');
