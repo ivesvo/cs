@@ -70,9 +70,7 @@ h5,
 p {
     color: rgb(101, 97, 79);
     --bs-nav-link-hover-color: #c5c4b7;
-
-    margin-bottom:0;
-
+    /* margin-bottom:0; */
 }
 
 a,
@@ -85,16 +83,11 @@ a,
 a:hover,
 .list-group-item-single:hover {
     color: #c5c4b7;
-
-}
-
-.contributors {
-    text-decoration: underline;
-}
-
-.contributors:hover {
     cursor: ne-resize;
 }
+
+.link-out {
+    text-decoration: underline;}
 
 .container {
     scroll-snap-type: y proximity;
@@ -397,7 +390,7 @@ section {
     --bs-btn-hover-bg: rgba(0, 0, 0, 0);
     --bs-btn-hover-border-color: rgba(0, 0, 0, 0);
     --bs-btn-active-color: #c5c4b7;
-    --bs-btn-active-bg: £fff;
+    --bs-btn-active-bg: #fff;
     --bs-btn-active-border-color: #fff;
 }
 
@@ -423,6 +416,15 @@ ul {
 }
 
 /* IMAGE CAROUSEL */
+
+.image-item {
+    transition: box-shadow .3s;
+}
+
+.image-item:hover {
+    box-shadow: 0 0 8px rgba(101, 97, 79, 0.786);
+}
+
 .carousel_container {
     max-width: 1200px;
     width: 100%;
@@ -481,8 +483,8 @@ ul {
 }
 
 .slider-wrapper .image-list .image-item {
-    width: 325px;
-    height: 200px;
+    width: 500px;
+    height: 350px;
     object-fit: cover;
 }
 
