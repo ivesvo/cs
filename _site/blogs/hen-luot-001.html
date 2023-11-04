@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>𝒞𝑜𝒹𝑒 𝒮𝓊𝓇𝒻𝒾𝓃𝑔</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/lecture.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#toc">
+    <div class="container">
+        <div class="row  d-flex flex-wrap-reverse">
+            <!-- MAIN CONTENT COLUMN -->
+            <div class="col-md-3" id="lecture-toc">
+                <h1 data-toc-skip>Hen Luot 001</h1>
+                <nav id="toc" data-toggle="toc"></nav>
+            </div>
+            
+            <div class="col-md-6" id="lecture-content">
+                <p>On Sunday, October 18th, the CodeSurfing club held its first meetup, “Hẹn Lướt,” at the popular Reading Cabin Cafe, a frequent venue for non-profit events among Saigon’s young artists.</p>
+
+<p>The event attracted 15 diverse participants, including senior graphic design students looking to enjoy their careers, a musician who creates bird-chirping soundscapes, a carpentry enthusiast, a tattoo artist, and a nail artist, all interested in coding.</p>
+
+<p>All participants shared an interest in exploring the potential of creative coding. The afternoon was filled with lively discussions, hands-on creative activities, and displays of artworks created with code.</p>
+
+<p>Participants didn’t need prior programming skills. In fact, we encouraged them to forget their preconceived notions about programming and creative work, which can limit their views on creative coding. In the words of Nhan, “Creative coding is about connection. If you’re a painter, you don’t have to abandon your brush and paint. Coding is a way to bring traditional materials together and expand the practitioner’s approach and the format of the artwork. The idea is what leads the way.”</p>
+
+<p>The really fun part of our meetup was the letter-writing activity. It started with the simple question: “What is a letter?” Nowadays, a letter isn’t just words on a page. You can draw it, fold it into some cool origami, or maybe even airdrop it like one of our participants who sneakily asked for a pen and jar of ink. It could be something like a weekly Tarot card emailed to your long-distance sweetheart, a chill mix of soundscapes, or a dream itinerary for your lover using places from Booking.com. Each way of creating and sending a letter is like its own little ceremony, making the whole thing feel more personal and meaningful.</p>
+
+<p>So, we got everyone to think about coding like they were writing a letter - a unique language that can share complicated thoughts and feelings. A letter made with code could be a visual thing, an interactive experience, a game, or even a piece of music created by hands and/or algorithms. This shift in thinking opened up a whole new world of possibilities and got everyone really talking. That’s the kind of spark CodeSurfing was looking to ignite that Sunday.</p>
+
+<p>The meetup concluded with an open forum, allowing participants to discuss their personal projects and ideas. This fostered a sense of camaraderie and teamwork. “We do not lack commendable and talented individuals. What we lack is a community that can support and embrace each other as if we are one ecosystem,” Nhan concluded as the event ended in a rainy breeze.</p>
+
+            </div>
+
+            <!-- NAV BAR COLUMN -->
+            <div class="col-md-3" id="site-nav">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-md d-flex">
+                        <a class="navbar-brand" href="#"> </a>
+                        <button id="OpenMenu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span>
+                                <img src="/scr/burger_logo.png" class="img-fluid burger">
+                            </span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                    <img src="/scr/codesurfing_logo_small.png" class="img-fluid surf" id="offcanvasExampLabel">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                                
+                                    
+                            </div>
+
+                            <div class="offcanvas-body flex-wrap">
+                                <a class="nav-link" href="#hello">
+                                    <h2 data-toc-skip>Home</h2>
+                                </a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <img src="/scr/sunset-ocean.gif" class="img-fluid sunset ">
+                                    <img src="/scr/sunset-ocean.gif" class="img-fluid sunset">
+                                    <img src="/scr/sunset-ocean.gif" class="img-fluid sunset">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <script src="/sketch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
+    <!-- add after bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+</body>
+
+</html>
