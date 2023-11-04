@@ -339,11 +339,11 @@ section {
 
 @media (min-width: 986px) {
     .navbar {
-        max-width: 320px;
+        max-width: 350px;
         position: fixed;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         overflow: auto;
-
+      
     }
 }
 

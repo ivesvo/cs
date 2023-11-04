@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Scroll to anchor and open accordion panel
 function openAccordion(id) {
   document.getElementById(id).classList.toggle("show");
+  document.getElementById(id).scrollIntoView();
 }
 
 
