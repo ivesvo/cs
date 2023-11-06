@@ -30,7 +30,8 @@ for (let i = 0; i < images.length; i++) {
 }
 
 
-//close offcanvas
+// infinite marquee
+// $('#maindiv').width($('#div1').width());
 
 
 

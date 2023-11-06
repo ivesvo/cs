@@ -44,6 +44,16 @@
                 </section>
 
                 <section class="px-4 welcome">
+                    <div class="marquee">
+                        <div>
+                            <span>🥰 Lecture 1 is UPDATED! ☼☼☼ Take a peak by clicking the icon ↗ next to the lecture title ⚡️</span>
+                            <span>🥰 Lecture 1 is UPDATED! ☼☼☼ Take a peak by clicking the icon ↗ next to the lecture title ⚡️</span>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="px-4 welcome">
                     <div id='hello'>
                         <h2>Catch us if you can 🏄🏻‍♂️</h2>
                         <a href="#" target="blank" text-decoration="underline">⤷ 2023 October 28th, 3PM-5PM ⎯
@@ -847,12 +857,18 @@
                             <div class="offcanvas-header">
                                 <img src="./scr/codesurfing_logo_small.png" class="img-fluid surf"
                                     id="offcanvasExampLabel">
+                                <img src="./scr/codesurfing_logo_small.png" class="img-fluid surf"
+                                    id="offcanvasExampLabel">
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
 
 
-                            </div>
 
+
+                            </div>
+                            <div>
+
+                            </div>
                             <div class="offcanvas-body flex-wrap">
                                 <a class="nav-link" href="#hello">
                                     <h2>About CodeSurfing</h2>
@@ -867,47 +883,122 @@
                                 </a>
 
 
-                                <ul class="list-group-item px-4">
-                                    <h5><a class="nav-item dropdown" href="#connect">Unit 1: Connect</a></h5>
-                                    <span data-toggle="collapse" href="#flush-collapseOne"
-                                        class="list-group-item list-group-item-single btn-link">⤷ first
-                                        interaction</span>
-                                    <span href="#animation" class="list-group-item list-group-item-single ">⤷
-                                        control</span>
-                                    <a href="#s1" class="list-group-item list-group-item-single">⤷
-                                        transformation &
-                                        iteration</a>
+                                <!-- <ul class="list-group-item px-4">
+                                    <h5>
+                                        <a class="nav-item" href="#connect" data-toggle="collapse" data-target=".multi-collapse" role="button"
+                                            aria-expanded="false" aria-controls="flush-collapseOne mutliCollapseExample1"
+                                            onClick="openAccordion('flush-collapseOne')">Phần 1: Kết Nối</a>
+                                    </h5>
+
+                                </ul> -->
+
+                                <div class="pt-2">
+
+                                    <ul class="list-group-item px-4 align-middle">
+                                        <h5>
+                                            <a href="#connect" type="button" data-bs-toggle="collapse"
+                                                data-bs-target=".p1" aria-expanded="false"
+                                                onClick="openAccordion('flush-collapseOne')">Unit 1: Connect
+                                            </a>
+                                        </h5>
+                                        <div class="collapse p1" id="connect-Sessions">
+                                            <a class="list-group-item list-group-item-single btn-link"
+                                                href="#first-interaction">⤷ first interaction</a>
+                                            <a href="#control" class="list-group-item list-group-item-single ">⤷
+                                                control</a>
+                                            <a href="#iteration" class="list-group-item list-group-item-single">⤷
+                                                transformation & iteration</a>
+                                        </div>
+                                    </ul>
+
+
+
+                                    <ul class="list-group-item px-4 align-middle">
+                                        <h5>
+                                            <a href="#transmit-vision" type="button" data-bs-toggle="collapse"
+                                                data-bs-target=".p2" aria-expanded="false"
+                                                onClick="openAccordion('flush-collapseTwo')">Unit 2: Transmit Vision</a>
+                                        </h5>
+                                        <div class="collapse multi-collapse p2" id="transmit-vision-Sessions">
+                                            <a href="#working-images" class="list-group-item list-group-item-single">⤷
+                                                working with images </a>
+
+                                            <a href="#pixel-to-image" class="list-group-item list-group-item-single">⤷
+                                                from pixel to image </a>
+
+
+                                            <a href="#more-than-pixels" class="list-group-item list-group-item-single">⤷
+                                                more than just pixels</a>
+
+                                        </div>
+                                    </ul>
+
+
+
+
+                                    <ul class="list-group-item px-4 align-middle">
+                                        <h5>
+                                            <a href=#transmit-sound" type="button" data-bs-toggle="collapse"
+                                                data-bs-target=".p3" aria-expanded="false"
+                                                onClick="openAccordion('flush-collapseThree')">Unit 3: Transmit Sound</a>
+                                        </h5>
+                                        <div class="collapse multi-collapse p3" id="transmit-vision-Sessions">
+                                            <a href="#sound" class="list-group-item list-group-item-single">⤷ sound</a>
+                                            <a href="#sound-viz" class="list-group-item list-group-item-single">⤷ visualize sound</a>
+                                            <a href="#sound-viz-2" class="list-group-item list-group-item-single">⤷ visualize sound (again)</a>
+                                        </div>
+                                    </ul>
+
+
+                                    <ul class="list-group-item px-4 align-middle">
+                                        <h5><a href="#transmit-data" type="button" data-bs-toggle="collapse"
+                                                data-bs-target=".p4" aria-expanded="false"
+                                                onClick="openAccordion('flush-collapseFour')">Unit 4: Transmit Data</a></h5>
+                                        <div class="collapse multi-collapse p4" id="transmit-vision-Sessions">
+                                            <a href="#data-pipeline" class="list-group-item list-group-item-single">⤷
+                                                the data pipeline</a>
+                                            <a href="#data-story" class="list-group-item list-group-item-single">⤷
+                                                the story of data</a>
+                                            <a href="#real-time" class="list-group-item list-group-item-single">⤷
+                                                realtime</a>
+                                        </div>
+                                    </ul>
+                                </div>
+
+                                <!-- <ul class="list-group-item px-4">
+                                    <h5><a href="#transmit-vision" data-toggle="collapse" role="button"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo"
+                                            onClick="openAccordion('flush-collapseTwo')">Phần 2: Truyền Hình</a></h5>
+                                    <a href="#working-images" class="list-group-item list-group-item-single">⤷ thao tác
+                                        với hình ảnh</a>
+                                    <a href="#pixel-to-image" class="list-group-item list-group-item-single">⤷ từ pixel
+                                        tới hình ảnh</a>
+                                    <a href="#more-than-pixels" class="list-group-item list-group-item-single">⤷ hơn cả
+                                        một pixel</a>
                                 </ul>
 
                                 <ul class="list-group-item px-4">
-                                    <h5><a href="#transmit-vision">Unit 2: Transmit Vision</a></h5>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ working with
-                                        images</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ from pixel to
-                                        image</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ more than just
-                                        pixels</a>
-
-                                </ul>
-
-                                <ul class="list-group-item px-4">
-                                    <h5><a href="#transmit-sound">Unit 3: Transmit Sound</a></h5>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ sound</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ visualize
-                                        sound</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ visualize
-                                        sound</a>
-                                </ul>
+                                    <h5><a href="#transmit-sound" data-toggle="collapse" role="button"
+                                            aria-expanded="false" aria-controls="flush-collapseThree"
+                                            onClick="openAccordion('flush-collapseThree')">Phần 3: Truyền Thanh</a></h5>
+                                    <a href="#sound" class="list-group-item list-group-item-single">⤷ âm thanh</a>
+                                    <a href="#sound-viz" class="list-group-item list-group-item-single">⤷ trực quan hoá
+                                        âm thanh</a>
+                                    <a href="#sound-viz-2" class="list-group-item list-group-item-single">⤷ vẫn là trực
+                                        quan hoá âm thanh</a>
+                                </ul> -->
 
 
-                                <ul class="list-group-item px-4">
-                                    <h5><a href="#transmit-data">Unit 4: Transmit Data</a></h5>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ the data
-                                        pipeline</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ the story of
-                                        data</a>
-                                    <a href="#" class="list-group-item list-group-item-single">⤷ realtime</a>
-                                </ul>
+                                <!-- <ul class="list-group-item px-4">
+                                    <h5><a href="#transmit-data" class="open-trigger" role="button"
+                                            aria-expanded="false" aria-controls="flush-collapseFour"
+                                            onClick="openAccordion('flush-collapseFour')">Phần 4: Truyền Tin</a></h5>
+                                    <a href="#data-pipeline" class="list-group-item list-group-item-single">⤷ "đường
+                                        ống" dữ liệu</a>
+                                    <a href="#data-story" class="list-group-item list-group-item-single">⤷ chuyện dữ
+                                        liệu</a>
+                                    <a href="#real-time" class="list-group-item list-group-item-single">⤷ realtime</a>
+                                </ul> -->
 
                                 <a class="nav-link" href="#">
                                     <h2>Feedbacks</h2>
@@ -919,6 +1010,8 @@
                                     <img src="./scr/sunset-ocean.gif" class="img-fluid sunset">
 
                                 </div>
+
+
 
                             </div>
                         </div>
