@@ -38,9 +38,9 @@
   <li>Understand p5 canvas’ coordinate system</li>
   <li>Use p5 built-in libraries to
     <ul>
-      <li>Draw simple shapes</li>
-      <li>Color the shapes</li>
-      <li>Make the shapes follow mouse cursor.</li>
+      <li>Draw simple shapes.</li>
+      <li>Color the shapes.</li>
+      <li>Make interaction with mouse.</li>
     </ul>
   </li>
 </ul>
@@ -52,17 +52,17 @@
 <ul>
   <li>Class theme and philosophy</li>
   <li>Course structure and duration</li>
-  <li>Introduce to class’ communication and resources hub (this website).</li>
+  <li>Class resources hub (this website).</li>
 </ul>
 
-<p>We start by discussing about two creative projects that are based on computation.</p>
+<p>We start by discussing about three creative projects that are based on programming.</p>
 
 <blockquote>
   <p>👨🏻‍🏫  NOTES:</p>
 
   <ul>
     <li><code class="language-plaintext highlighter-rouge">For teachers</code>: The selection of projects is up to teachers. But you should choose projects that students can try or play, or the projects that clearly emphasize the interaction between human and computer.</li>
-    <li><code class="language-plaintext highlighter-rouge">For students</code>: You can explore more examples at the <a href="https://showcase.p5js.org/#/">p5 examples</a> or in CodeSurfing’s readings archive.</li>
+    <li><code class="language-plaintext highlighter-rouge">For students</code>: You can explore more examples at the <a href="https://showcase.p5js.org/#/">p5 examples</a> or in CodeSurfing’s reading archive.</li>
   </ul>
 </blockquote>
 
@@ -112,7 +112,6 @@
   </li>
   <li>Code is a set of rules (algorithms) that maps the input into the output. Or here, adjust the output according to the change of input.</li>
   <li>This links to our course philosophy: to use coding as a medium to document and react to the change of the nature around us.</li>
-  <li>Show some projects that are built using p5.js. This can be teacher’s personal projects, past students projects, other artists, or the <a href="https://showcase.p5js.org/#/">p5 Showcase</a>. Based on this, students can have a sense of what p5 can do and what to expect as an outcome of this class in term of technicality.</li>
 </ul>
 
 <h3 id="what-is-programming">What is programming?</h3>
@@ -194,7 +193,7 @@ Getting bugs while live-coding is a good chance to teach debugging! Don’t shy 
 <h3 id="function-basic-shapes-and-styling">Function, basic shapes, and styling</h3>
 
 <ul>
-  <li>p5.js has many built-in functions for example the drawing functions.
+  <li>p5.js has many built-in functions, for example, the drawing functions.
     <ul>
       <li>p5.js provides user with a well-written documentation at https://p5js.org/reference/.</li>
       <li>It’s a common practice in program to use documentation as a guide, even for senior programmers as syntax might change and vary from time to time, in different libraries.</li>
@@ -209,7 +208,7 @@ Getting bugs while live-coding is a good chance to teach debugging! Don’t shy 
     </ul>
   </li>
   <li>Function can be built-in (provided by the library by default), or designed by developers - us. We stick with the built-in functions for now.</li>
-  <li>By default of the p5 editor, there are two functions <code class="language-plaintext highlighter-rouge">setup()</code> and <code class="language-plaintext highlighter-rouge">draw()</code>. We will more about these two functions later.</li>
+  <li>By default of the p5 editor, there are two functions <code class="language-plaintext highlighter-rouge">setup()</code> and <code class="language-plaintext highlighter-rouge">draw()</code>. We will discuss more about these two functions later.</li>
   <li>For now, all the code for drawing will be written within the <code class="language-plaintext highlighter-rouge">draw()</code> function. By <em>within</em> we mean that every drawing code should be within the curly brackets “{}” of the function and has an indent - a tab at the beginning of the line compared to the function line.</li>
   <li>
     <p>Inside the <code class="language-plaintext highlighter-rouge">setup()</code> function, we write the all the set-up needed for our drawing. For example, <code class="language-plaintext highlighter-rouge">createCanvas()</code> sets up a <code class="language-plaintext highlighter-rouge">canvas</code> on which we can draw. Change parameters inside to change the size of the canvas. For example, <code class="language-plaintext highlighter-rouge">createCanvas(300, 300)</code> to create a 300px * 300px canvas.</p>
@@ -290,7 +289,7 @@ Getting bugs while live-coding is a good chance to teach debugging! Don’t shy 
 
 <p><strong>VARIABLE, ANIMATION, AND MOUSE INTERACTIVITY</strong></p>
 <ul>
-  <li>Now that we have a still drawing, let make it move. For example, make the circle move across the canvas.</li>
+  <li>Now that we have a still drawing, let’s make it move. For example, make the circle move across the canvas.</li>
   <li>In order to make the circle move across the screen, we need to adjust its location over time. For example, to move to the right, we need to increase its x-coord by 1 every frame.</li>
   <li>Instead of giving a fixed location, we now use <code class="language-plaintext highlighter-rouge">variable</code> to host the value of x-coord. So we can give a new value to the variable x at every frame. And by that, make the circle move.</li>
 </ul>
