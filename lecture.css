@@ -34,6 +34,57 @@
     padding: 10px 10px 10px 0px;   
 }
 
+/* ******** sample lecture ********** */
+@media (min-width: 768px){
+    #lecture-toc {
+      position: absolute;
+      top: 10px;
+      bottom: 0;
+      left: 0px;
+      width: 25%;
+      overflow-y: scroll; 
+      padding-left: 25px;
+    }
+  
+    #lecture-content {
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      left: 25%;
+      width: 50%;
+      overflow-y: scroll; 
+    }
+    
+    #site-nav {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      overflow-y: scroll;
+      width: 25%;
+    }
+  }
+
+  #lecture-toc{
+    order:1;
+    height:100%;
+    margin-top:15px;
+}
+
+#lecture-content{
+    order:0;
+    height:100%;
+    margin-top:15px;
+    /* border: 2px dotted rgba(101, 97, 79, .5); */
+}
+
+#site-nav{
+    order:2;
+    height:100%;
+    margin-top:15px;
+} 
+
+
 .highlight code, .highlight pre {
     color:#fdce93;
     background-color:#3f3f3f;

@@ -171,57 +171,6 @@ table{
     margin: 1rem 0 1rem 0;
 }
 
-
-/* ******** sample lecture ********** */
-@media (min-width: 768px){
-    #lecture-toc {
-      position: absolute;
-      top: 10px;
-      bottom: 0;
-      left: 0px;
-      width: 25%;
-      overflow-y: scroll; 
-      padding-left: 25px;
-    }
-  
-    #lecture-content {
-      position: absolute;
-      top: 0px;
-      bottom: 0;
-      left: 25%;
-      width: 50%;
-      overflow-y: scroll; 
-    }
-    
-    #site-nav {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      overflow-y: scroll;
-      width: 25%;
-    }
-  }
-
-  #lecture-toc{
-    order:1;
-    height:100%;
-    margin-top:15px;
-}
-
-#lecture-content{
-    order:0;
-    height:100%;
-    margin-top:15px;
-    /* border: 2px dotted rgba(101, 97, 79, .5); */
-}
-
-#site-nav{
-    order:2;
-    height:100%;
-    margin-top:15px;
-} 
-
 /* Hide code embed on mobile and show gif instead*/
 @media screen and (max-width: 480px) {
     .p5-embed {
@@ -260,10 +209,12 @@ table{
 
     .surf {
         max-height: 10px;
+        /* width: 20%; */
     }
 
     .sunset {
-        max-height: calc(10px + 0.2vw) !important;
+        /* max-height: calc(10px + 0.2vw) !important; */
+        width:80%;
         margin: 0 !important;
     }
 
@@ -346,8 +297,6 @@ section {
       
     }
 }
-
-
 
 /* .navbar-toggler{
     border: 2px dotted rgba(101,97,79, .5);
@@ -588,9 +537,19 @@ ul {
     float: left;
     width: 50%;
     font-size: var(--h2-size);
+    white-space:nowrap;
   }
   
   @keyframes marquee {
     0% { left: 0; }
-    100% { left: -100%; }
+    100% { left: -200%; }
   }
+
+
+  @media screen and (max-width: 480px) {
+    .marquee div {
+        width: 600%;
+        animation: marquee 10s linear infinite;
+    }
+
+}
